@@ -1,19 +1,16 @@
 /*
-  960 Grid System ~ Text CSS.
-  Learn more ~ http://960.gs/
+960 Grid System ~ Text CSS.
+Learn more ~ http://960.gs/
 
-  Licensed under GPL and MIT.
-*/
-
+Licensed under GPL and MIT.
+ */
 /* `Basic HTML
 ----------------------------------------------------------------------------------------------------*/
-
 body {
   font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
 }
 
-pre,
-code {
+pre,code {
   font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace;
 }
 
@@ -26,7 +23,6 @@ hr {
 
 /* `Headings
 ----------------------------------------------------------------------------------------------------*/
-
 h1 {
   font-size: 25px;
 }
@@ -53,7 +49,6 @@ h6 {
 
 /* `Spacing
 ----------------------------------------------------------------------------------------------------*/
-
 ol {
   list-style: decimal;
 }
@@ -66,29 +61,13 @@ li {
   margin-left: 30px;
 }
 
-p,
-dl,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ol,
-ul,
-pre,
-table,
-address,
-fieldset,
-figure {
+p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset,figure {
   margin-bottom: 20px;
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
+Author's custom styles
+========================================================================== */
 @font-face {
   font-family: 'Lobster';
   font-style: normal;
@@ -113,9 +92,9 @@ figure {
 }
 
 #are-you-the-one h1 {
-  margin-left:0;
+  margin-left: 0;
   font-size: 125px;
-  color: white; 
+  color: white;
   font-family: 'Lobster';
 }
 
@@ -131,6 +110,8 @@ figure {
   position: absolute;
   margin-top: 325px;
   background: url(../img/bedge_grunge.png);
+
+  -webkit-box-shadow: 0px 0px 25px 6px #000;
   box-shadow: 0px 0px 25px 6px #000;
   padding-top: 20px;
   font-family: 'Droid Sans';
@@ -160,10 +141,6 @@ figure {
   color: black;
   margin-left: 100px;
   border-bottom: none;
-}
-
-.container_12 .link-item a:hover {
-
 }
 
 .container_12 .link-item .icon {
@@ -206,57 +183,57 @@ figure {
   color: white;
 }
 
-.container_12 .colour-div:before, .container_12 .colour-div:after {
- content: "";
- position: absolute;
- display: block;
- bottom: -1em;
- z-index: -1;
+.container_12 .colour-div:before,.container_12 .colour-div:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  z-index: -1;
 }
 
 .container_12 .colour-div:before {
- border-left-color: transparent;
+  border-left-color: transparent;
 }
 
 .container_12 .colour-div:after {
- border-right-color: transparent;
+  border-right-color: transparent;
 }
 
-.container_12 .colour-div .colour-text:before, .container_12 .colour-div .colour-text:after {
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color: black transparent transparent transparent;
- bottom: -1em;
+.container_12 .colour-div .colour-text:before,.container_12 .colour-div .colour-text:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  bottom: -1em;
 }
 
 .container_12 .colour-div .colour-text:before {
- left: 0;
- border-width: 1em 0 0 1em;
+  left: 0;
+  border-width: 1em 0 0 1em;
 }
 
 .container_12 .colour-div .colour-text:after {
- right: 0;
- border-width: 1em 1em 0 0;
+  right: 0;
+  border-width: 1em 1em 0 0;
 }
 
-.container_12 .programers, .container_12 .designers {
+.container_12 .programers,.container_12 .designers {
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
 }
 
-.container_12 .programers h3, .container_12 .designers h3 {
+.container_12 .programers h3,.container_12 .designers h3 {
   font-weight: normal;
 }
 
-.container_12 .programers p, .container_12 .designers p {
+.container_12 .programers p,.container_12 .designers p {
   font-size: 15px;
   text-align: justify;
 }
 
-.container_12 p a {
+.container_12 p a,.container_12 li a {
   color: black;
   text-decoration: none;
   border-bottom: 1px dashed #343431;
@@ -264,8 +241,11 @@ figure {
 
 .container_12 .poster-div {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 0px;
+  background: url(../img/debut_dark.png);
+  width: 100%;
 }
 
 .container_12 .poster-div img {
@@ -294,7 +274,7 @@ figure {
   background-color: #CA3030;
 }
 
-.green{
+.green {
   background-color: #00933B;
 }
 
@@ -303,16 +283,20 @@ figure {
   font-size: 20px;
   text-align: center;
   padding: 30px;
-  
 }
-.container_12 .footer{
-  background-color: grey;
+
+.container_12 .footer {
+  background-color: gray;
   font-size: 10px;
   text-align: center;
   margin-left: 0px;
   margin-top: 0px;
   width: 100%;
   position: relative;
+}
+
+.container_12 .footer p {
+  margin: 0;
 }
 
 .container_12 .blog-div {
@@ -327,7 +311,7 @@ figure {
   z-index: 0;
 }
 
-.container_12 .blog-div .blog-head, .container_12 .blog-div .blog-text {
+.container_12 .blog-div .blog-head,.container_12 .blog-div .blog-text {
   position: absolute;
   z-index: 5;
   color: white;
@@ -351,8 +335,6 @@ figure {
   width: 300px;
   height: 300px;
   background: rgba(0,0,0,0.5);
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
   border-radius: 100%;
 }
 
@@ -370,4 +352,32 @@ figure {
   font-size: 15px;
 }
 
+.container_12 .challenges-div {
+  padding: 70px 0 0 30px;
+}
 
+.container_12 .challenges-div p {
+  margin-top: 30px;
+}
+
+.container_12 .challenges-div ul {
+  border-left: 5px solid black;
+}
+
+.container_12 .challenges-div ul li {
+  margin-left: 30px;
+  list-style: none;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.container_12 .mascot img {
+  width: 250px;
+  padding: 30px 0;
+}
+
+.container_12 .challenges-mascot {
+  background-image: -webkit-linear-gradient(top, #FDFEF8, #F8F9F4); 
+  width: 100%;
+  margin-left: 0;
+}
