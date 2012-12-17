@@ -377,7 +377,11 @@ Author's custom styles
 }
 
 .container_12 .challenges-mascot {
-  background-image: -webkit-linear-gradient(top, #FDFEF8, #F8F9F4); 
+  background-image: -webkit-linear-gradient(top, #FDFEF8, #F8F9F4);
+  background-image: -moz-linear-gradient(top, #FDFEF8, #F8F9F4);
+  background-image: -o-linear-gradient(top, #FDFEF8, #F8F9F4);
+  background-image: -ms-linear-gradient(top, #FDFEF8, #F8F9F4);
+  background-image: linear-gradient(top, #FDFEF8, #F8F9F4);
   width: 100%;
   margin-left: 0;
 }
