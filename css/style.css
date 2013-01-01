@@ -385,3 +385,8 @@ Author's custom styles
   width: 100%;
   margin-left: 0;
 }
+
+.blog-head a {
+  text-decoration: none;
+  color: white;
+}
