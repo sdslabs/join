@@ -104,11 +104,26 @@ Author's custom styles
   color: #cecece;
 }
 
+#are-you-the-one h2.white {
+  color: white;
+}
+
+#are-you-the-one h2 b {
+  padding-left: 20px;
+  text-align: right;
+}
+
+#are-you-the-one .dates {
+  text-align: left;
+  width: 400px;
+  margin: auto;
+}
+
 #content {
   width: 100%;
   z-index: 5;
   position: absolute;
-  margin-top: 325px;
+  margin-top: 400px;
   background: url(../img/bedge_grunge.png);
 
   -webkit-box-shadow: 0px 0px 25px 6px #000;
