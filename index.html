@@ -27,7 +27,7 @@
                     10th January<b>Introductory Talk</b><br>  
                     11th January<b>Recruitment Test</b><br>
                     <b>Time</b> 6.30 PM<b>Venue</b> LHC<br>
-                    <span class="updates-text">Updates</span><sup>NEW</sup>
+                    <a class="updates-text" href="#updates">Updates<sup>NEW</sup></a>
                 </h2>
             </div>
         </header>
@@ -172,7 +172,7 @@
                 </a>                
                 <div class="clear"></div>
                 <div class="grid_12 divider black updates-div">
-                    <div class="divider-head">Updates</div>
+                    <div class="divider-head" id="updates">Updates</div>
                 </div>
                 <div class="clear"></div>
                 <div class="grid_12 update-item">
@@ -247,14 +247,5 @@
                 </div>
             </div><!-- /container_12-->
         </div><!-- /content-->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript">
-            jQuery(document).ready(function($) {
-               $('.updates-text').on('click', function(event) {
-                   event.preventDefault();
-                   $('html, body').animate({'scrollTop': $('.updates-div').offset().top}, 1000);
-               }); 
-            });
-        </script>
     </body>
 </html>
