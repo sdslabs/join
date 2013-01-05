@@ -125,6 +125,7 @@ Author's custom styles
   text-decoration: none;
   margin-left: 100px;
   cursor: pointer;
+  border-bottom: 1px dashed white;
 }
 
 #are-you-the-one sup {
