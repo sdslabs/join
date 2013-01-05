@@ -23,10 +23,12 @@
         <header id="are-you-the-one">
             <h1>Are you the One?</h1>
             <div class="dates">
-                <h2 class="white">10th January<b>Introductory Talk</b><br>  
-                11th January<b>Recruitment Test</b><br>
-                <b>Time</b> 6.30 PM<b>Venue</b> LHC
-            </h2>
+                <h2 class="white">
+                    10th January<b>Introductory Talk</b><br>  
+                    11th January<b>Recruitment Test</b><br>
+                    <b>Time</b> 6.30 PM<b>Venue</b> LHC<br>
+                    <span class="updates-text">Updates</span><sup>NEW</sup>
+                </h2>
             </div>
         </header>
 
@@ -169,7 +171,43 @@
                     </div>
                 </a>                
                 <div class="clear"></div>
-                <div class="grid_12 divider green">
+                <div class="grid_12 divider black updates-div">
+                    <div class="divider-head">Updates</div>
+                </div>
+                <div class="clear"></div>
+                <div class="grid_12 update-item">
+                    <div class="grid_7 update-description">
+                        <h2>Codeblitz</h2>
+                        <p>
+                            An Online Coding Competition
+                        </p>
+                        <p>
+                            Time: <b>Sunday, January 6, 10AM to 10PM</b>
+                        </p>
+                        <p>
+                            Venue: <b><a href="https://sdslabs.co.in/codevillage/">CodeVillage</a></b>
+                        </p>
+                        <p>
+                            Top 3 first yearites get wild card entry to recruitment interviews!
+                        </p>
+                    </div>
+                    <div class="grid_3">
+                        <span class="poster-item">
+                            <a href="img/codeblitz.jpg" target="_blank"><img src="img/codeblitz-thumb.jpg" alt="Codeblitz-3" height="315" width="222"></a>
+                        </span>
+                    </div>
+                </div>
+                <hr>
+                <div class="grid_12 update-item">
+                    <div class="grid_7 update-description">
+                        <h2>Designer Submissions</h2>
+                        <p>
+                            Problems for designers will be uploaded soon! Keep watching this space!
+                        </p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="grid_12 divider blue">
                     <div class="divider-head">Challenges</div>
                 </div>
                 <div class="clear"></div>
@@ -188,8 +226,8 @@
                     </div>
                 </div>
                 <div class="clear"></div>
-                <div class="grid_12 divider red">
-                    <div class="divider-head">Posters</div>
+                <div class="grid_12 divider black">
+                    <div class="divider-head">Artwork</div>
                 </div>
                 <div class="clear"></div>
                 <div class="grid_12 poster-div">
@@ -209,5 +247,14 @@
                 </div>
             </div><!-- /container_12-->
         </div><!-- /content-->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+               $('.updates-text').on('click', function(event) {
+                   event.preventDefault();
+                   $('html, body').animate({'scrollTop': $('.updates-div').offset().top}, 1000);
+               }); 
+            });
+        </script>
     </body>
 </html>

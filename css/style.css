@@ -119,11 +119,26 @@ Author's custom styles
   margin: auto;
 }
 
+#are-you-the-one .updates-text {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+#are-you-the-one sup {
+  color: red;
+  font-size: 13px;
+  margin-left: 2px;
+  text-decoration: none;
+}
+
 #content {
   width: 100%;
   z-index: 5;
   position: absolute;
-  margin-top: 400px;
+  margin-top: 425px;
   background: url(../img/bedge_grunge.png);
 
   -webkit-box-shadow: 0px 0px 25px 6px #000;
@@ -293,6 +308,10 @@ Author's custom styles
   background-color: #00933B;
 }
 
+.black {
+  background-color: #000000;
+}
+
 .container_12 .divider .divider-head {
   color: white;
   font-size: 20px;
@@ -335,7 +354,7 @@ Author's custom styles
 .container_12 .blog-div .blog-head {
   background-color: rgba(0,0,0,0.5);
   margin-left: 620px;
-  margin-top: 7%;
+  margin-top: 6%;
   padding: 30px;
   text-align: right;
 }
@@ -345,7 +364,7 @@ Author's custom styles
 }
 
 .container_12 .blog-div .blog-text {
-  margin-top: 5%;
+  margin-top: 3%;
   margin-left: 50px;
   width: 300px;
   height: 300px;
@@ -404,4 +423,20 @@ Author's custom styles
 .blog-head a {
   text-decoration: none;
   color: white;
+}
+
+.container_12 .update-item {
+  margin: 40px 0;
+}
+
+.container_12 .update-item .update-description {
+  padding-left: 40px;
+}
+
+.container_12 .update-item .update-description p {
+  font-size: 15px;
+}
+
+.container_12 .update-item .poster-item img {
+  border: 1px solid black;
 }
