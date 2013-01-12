@@ -114,8 +114,9 @@ Author's custom styles
 }
 
 #are-you-the-one .dates {
-  text-align: left;
-  width: 400px;
+
+  text-align: center;
+  width: 600px;
   margin: auto;
 }
 
@@ -123,7 +124,6 @@ Author's custom styles
   color: white;
   text-align: center;
   text-decoration: none;
-  margin-left: 100px;
   cursor: pointer;
   border-bottom: 1px dashed white;
 }
