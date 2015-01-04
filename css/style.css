@@ -91,6 +91,15 @@ Author's custom styles
   width: 100%;
 }
 
+#are-you-the-one a {
+  color: red;
+  text-decoration: none;
+  border-bottom: 1px dashed red;
+}
+
+#are-you-the-one .current{
+  color: rgb(193, 33, 33);
+}
 #are-you-the-one h1 {
   margin-left: 0;
   font-size: 125px;
