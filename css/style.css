@@ -446,6 +446,10 @@ Author's custom styles
   font-size: 15px;
 }
 
+.date-list {
+  font-size: 15px !important;
+}
+
 .container_12 .update-item .poster-item img {
   border: 1px solid black;
 }
