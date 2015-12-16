@@ -258,17 +258,17 @@ Author's custom styles
   border-width: 1em 1em 0 0;
 }
 
-.container_12 .programers,.container_12 .designers {
+.container_12 .makers {
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
 }
 
-.container_12 .programers h3,.container_12 .designers h3 {
+.container_12 .makers h3 {
   font-weight: normal;
 }
 
-.container_12 .programers p,.container_12 .designers p {
+.container_12 .makers p {
   font-size: 15px;
   text-align: justify;
 }
