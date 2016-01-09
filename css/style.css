@@ -163,12 +163,12 @@ Author's custom styles
 }
 
 .container .logo-div {
-  margin-top: 10px;
+  margin-top: 30px;
   text-align: center;
 }
 
 .container .logo-div .logo {
-  width: 100px;
+  width: 75px;
 }
 
 .container .links {
@@ -199,7 +199,6 @@ Author's custom styles
 }
 
 .container .jist blockquote {
-  border-bottom: 4px solid #cecece;
   padding: 10px 0;
   text-align: justify;
 }
@@ -207,7 +206,7 @@ Author's custom styles
 .container .colour-div {
   background: url(../img/debut_dark.png);
   background-color: #343131;
-  margin: 20px 0;
+  margin: 40px 0;
   margin-left: -2.5%;
   text-align: center;
   padding: 0.5em 0;
@@ -275,7 +274,7 @@ Author's custom styles
 }
 
 .container p a,.container li a {
-  color: black;
+  color: inherit;
   text-decoration: none;
   border-bottom: 1px dashed #343431;
 }
@@ -303,7 +302,7 @@ Author's custom styles
 
 .blue {
   background-color: #1878BD;
-  color: white;
+  color: #f9f9f9;
 }
 
 .orange {
@@ -328,7 +327,7 @@ Author's custom styles
 
 .gray {
   background-color: #EBECEE;
-  color: #000000;
+  color: #4A4B4F;
 }
 
 .center {
@@ -336,10 +335,16 @@ Author's custom styles
   margin: auto;
 }
 
+.right {
+  display: block;
+  float: right;
+}
+
 .container .divider .divider-head {
-  font-size: 20px;
+  font-family : Open Sans;
+  font-size: 32px;
   text-align: center;
-  padding: 20px;
+  padding: 11px;
 }
 
 .container .footer {
@@ -469,7 +474,8 @@ Author's custom styles
 }
 
 .container .eventlist {
-  margin: 30px 0px;
+  margin: 60px 0px;
+
 }
 
 .container .event {
@@ -511,6 +517,64 @@ Author's custom styles
 
 .container .eventfinished .description {
   color: #B7B7B7;
+}
+
+.container .problem_statement {
+  width: 275px;
+  padding: 10px;
+}
+
+.container .problem_statement .light {
+  font-family : Open Sans;
+  font-size : 18px;
+  line-height : 30.6px;
+  letter-spacing : 0.36px;
+  color : #6A6B6D;
+}
+
+.container .problem_statement .bold {
+  font-family : Open Sans;
+  font-weight : bold;
+  font-size : 18px;
+  line-height : 30.6px;
+  letter-spacing : 0.36px;
+  color : #3F4042;
+}
+
+.container .ribbon {
+  margin-top: 50px;
+}
+
+.container .disclaimer {
+  font-family : Open Sans;
+  font-size : 16px;
+  line-height : 24px;
+  letter-spacing : 0.32px;
+  color : #A8ACB2;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.container .message {
+  margin: auto;
+  font-family : Open Sans;
+  font-size : 18px;
+  line-height : 30.6px;
+  letter-spacing : 0.36px;
+  text-align: center;
+  max-width: 80%;
+  color : #6A6B6D;
+  color : rgb(106, 107, 109);
+}
+
+.container .message .email {
+  font-family : Myriad Pro;
+  font-size : 29px;
+  line-height : 30.6px;
+  letter-spacing : 0.58px;
+  color : #28292B;
+  color : rgb(40, 41, 43);
+  text-decoration: none;
 }
 
 /* Table */
