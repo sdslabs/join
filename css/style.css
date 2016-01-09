@@ -157,25 +157,25 @@ Author's custom styles
   font-family: 'Droid Sans';
 }
 
-.container_12 {
+.container {
   margin-top: -20px;
   background: rgba(255,255,255,1);
 }
 
-.container_12 .logo-div {
+.container .logo-div {
   margin-top: 10px;
   text-align: center;
 }
 
-.container_12 .logo-div .logo {
+.container .logo-div .logo {
   width: 100px;
 }
 
-.container_12 .links {
+.container .links {
   margin: 35px 0 0 20px;
 }
 
-.container_12 .link-item a {
+.container .link-item a {
   font-size: 15px;
   text-decoration: none;
   color: black;
@@ -183,28 +183,28 @@ Author's custom styles
   border-bottom: none;
 }
 
-.container_12 .link-item .icon {
+.container .link-item .icon {
   width: 20px;
   padding-left: 10px;
 }
 
-.container_12 .link-item {
+.container .link-item {
   padding: 5px 0 5px 0;
   border-bottom: 1px solid #aaa;
 }
 
-.container_12 .jist {
+.container .jist {
   font-size: 16px;
   margin: 25px 0;
 }
 
-.container_12 .jist blockquote {
+.container .jist blockquote {
   border-bottom: 4px solid #cecece;
   padding: 10px 0;
   text-align: justify;
 }
 
-.container_12 .colour-div {
+.container .colour-div {
   background: url(../img/debut_dark.png);
   background-color: #343131;
   margin: 20px 0;
@@ -215,7 +215,7 @@ Author's custom styles
   position: relative;
 }
 
-.container_12 .colour-div .colour-text {
+.container .colour-div .colour-text {
   border-top: 1px dashed #cecece;
   border-bottom: 1px dashed #cecece;
   padding: 20px 0;
@@ -223,7 +223,7 @@ Author's custom styles
   color: white;
 }
 
-.container_12 .colour-div:before,.container_12 .colour-div:after {
+.container .colour-div:before,.container .colour-div:after {
   content: "";
   position: absolute;
   display: block;
@@ -231,15 +231,15 @@ Author's custom styles
   z-index: -1;
 }
 
-.container_12 .colour-div:before {
+.container .colour-div:before {
   border-left-color: transparent;
 }
 
-.container_12 .colour-div:after {
+.container .colour-div:after {
   border-right-color: transparent;
 }
 
-.container_12 .colour-div .colour-text:before,.container_12 .colour-div .colour-text:after {
+.container .colour-div .colour-text:before,.container .colour-div .colour-text:after {
   content: "";
   position: absolute;
   display: block;
@@ -248,39 +248,39 @@ Author's custom styles
   bottom: -1em;
 }
 
-.container_12 .colour-div .colour-text:before {
+.container .colour-div .colour-text:before {
   left: 0;
   border-width: 1em 0 0 1em;
 }
 
-.container_12 .colour-div .colour-text:after {
+.container .colour-div .colour-text:after {
   right: 0;
   border-width: 1em 1em 0 0;
 }
 
-.container_12 .makers {
+.container .makers {
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
 }
 
-.container_12 .makers h3 {
+.container .makers h3 {
   font-weight: normal;
 }
 
-.container_12 .makers p {
+.container .makers p {
   font-size: 15px;
   text-align: justify;
   padding: 10px;
 }
 
-.container_12 p a,.container_12 li a {
+.container p a,.container li a {
   color: black;
   text-decoration: none;
   border-bottom: 1px dashed #343431;
 }
 
-.container_12 .poster-div {
+.container .poster-div {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -289,14 +289,13 @@ Author's custom styles
   width: 100%;
 }
 
-.container_12 .poster-div img {
+.container .poster-div img {
   border: 1px solid #343431;
   margin: 0 30px;
 }
 
-.container_12 .divider {
-  margin-left: 0px;
-  margin-top: 0px;
+.container .divider {
+  margin: 0px 0px;
   width: 100%;
   position: relative;
   z-index: 500;
@@ -304,32 +303,46 @@ Author's custom styles
 
 .blue {
   background-color: #1878BD;
+  color: white;
 }
 
 .orange {
   background-color: #E44600;
+  color: white;
 }
 
 .red {
   background-color: #CA3030;
+  color: white;
 }
 
 .green {
   background-color: #00933B;
+  color: white;
 }
 
 .black {
   background-color: #000000;
+  color: white;
 }
 
-.container_12 .divider .divider-head {
-  color: white;
+.gray {
+  background-color: #EBECEE;
+  color: #000000;
+}
+
+.center {
+  display: block;
+  margin: auto;
+}
+
+.container .divider .divider-head {
   font-size: 20px;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
 }
 
-.container_12 .footer {
+.container .footer {
   background-color: gray;
   font-size: 10px;
   text-align: center;
@@ -339,29 +352,29 @@ Author's custom styles
   position: relative;
 }
 
-.container_12 .footer p {
+.container .footer p {
   margin: 0;
 }
 
-.container_12 .blog-div {
+.container .blog-div {
   width: 100%;
   margin-left: 0px;
 }
 
-.container_12 .blog-div img {
+.container .blog-div img {
   width: 100%;
   float: left;
   position: relative;
   z-index: 0;
 }
 
-.container_12 .blog-div .blog-head,.container_12 .blog-div .blog-text {
+.container .blog-div .blog-head,.container .blog-div .blog-text {
   position: absolute;
   z-index: 5;
   color: white;
 }
 
-.container_12 .blog-div .blog-head {
+.container .blog-div .blog-head {
   background-color: rgba(0,0,0,0.5);
   margin-left: 620px;
   margin-top: 6%;
@@ -369,11 +382,11 @@ Author's custom styles
   text-align: right;
 }
 
-.container_12 .blog-div .blog-head .blog-title {
+.container .blog-div .blog-head .blog-title {
   font-size: 20px;
 }
 
-.container_12 .blog-div .blog-text {
+.container .blog-div .blog-text {
   margin-top: 3%;
   margin-left: 50px;
   width: 300px;
@@ -382,12 +395,12 @@ Author's custom styles
   border-radius: 100%;
 }
 
-.container_12 .blog-div .blog-text blockquote img {
+.container .blog-div .blog-text blockquote img {
   padding: 20px 45%;
   width: 30px;
 }
 
-.container_12 .blog-div .blog-text blockquote p {
+.container .blog-div .blog-text blockquote p {
   clear: left;
   text-align: center;
   margin: 0;
@@ -396,31 +409,31 @@ Author's custom styles
   font-size: 15px;
 }
 
-.container_12 .challenges-div {
+.container .challenges-div {
   padding: 70px 0 0 30px;
 }
 
-.container_12 .challenges-div p {
+.container .challenges-div p {
   margin-top: 30px;
 }
 
-.container_12 .challenges-div ul {
+.container .challenges-div ul {
   border-left: 5px solid black;
 }
 
-.container_12 .challenges-div ul li {
+.container .challenges-div ul li {
   margin-left: 30px;
   list-style: none;
   font-size: 20px;
   line-height: 40px;
 }
 
-.container_12 .mascot img {
+.container .mascot img {
   width: 250px;
   padding: 30px 0;
 }
 
-.container_12 .challenges-mascot {
+.container .challenges-mascot {
   background-image: -webkit-linear-gradient(top, #FDFEF8, #F8F9F4);
   background-image: -moz-linear-gradient(top, #FDFEF8, #F8F9F4);
   background-image: -o-linear-gradient(top, #FDFEF8, #F8F9F4);
@@ -435,15 +448,15 @@ Author's custom styles
   color: white;
 }
 
-.container_12 .update-item {
+.container .update-item {
   margin: 40px 0;
 }
 
-.container_12 .update-item .update-description {
+.container .update-item .update-description {
   padding-left: 40px;
 }
 
-.container_12 .update-item .update-description p {
+.container .update-item .update-description p {
   font-size: 15px;
 }
 
@@ -451,8 +464,53 @@ Author's custom styles
   font-size: 15px !important;
 }
 
-.container_12 .update-item .poster-item img {
+.container .update-item .poster-item img {
   border: 1px solid black;
+}
+
+.container .eventlist {
+  margin: 30px 0px;
+}
+
+.container .event {
+  display: block;
+  margin: 0px -40px;
+  height: 127.75px;
+}
+
+.container .eventleft {
+  text-align: right;
+}
+
+.container .eventright {
+  text-align: left;
+}
+
+
+.container .event .title {
+  font-family : Open Sans;
+  font-size : 24px;
+  font-weight: bold;
+  letter-spacing : 0.48px;
+  color : #840000;
+  color : rgb(132, 0, 0);
+}
+
+.container .event .description {
+  font-family : Open Sans;
+  font-size : 16px;
+  line-height : 23px;
+  letter-spacing : 0.32px;
+  color : #515151;
+  color : rgb(81, 81, 81);
+}
+
+.container .eventfinished .title {
+  color: #919191;
+}
+
+.container .eventfinished .description {
+  color: #B7B7B7;
 }
 
 /* Table */
