@@ -271,6 +271,7 @@ Author's custom styles
 .container_12 .makers p {
   font-size: 15px;
   text-align: justify;
+  padding: 10px;
 }
 
 .container_12 p a,.container_12 li a {
