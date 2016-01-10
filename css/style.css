@@ -149,7 +149,8 @@ Author's custom styles
   z-index: 5;
   position: absolute;
   margin-top: 350px;
-  background: url(../img/bedge_grunge.png);
+  background-color: #DCDCEA;
+  /*background: url(../img/bedge_grunge.png);*/
 
   -webkit-box-shadow: 0px 0px 25px 6px #000;
   box-shadow: 0px 0px 25px 6px #000;
@@ -160,6 +161,10 @@ Author's custom styles
 .container {
   margin-top: -20px;
   background: rgba(255,255,255,1);
+
+  -webkit-box-shadow: 0px 0px 63px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 63px -8px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 63px -8px rgba(0,0,0,0.75);
 }
 
 .container .logo-div {
@@ -207,10 +212,10 @@ Author's custom styles
   background: url(../img/debut_dark.png);
   background-color: #343131;
   margin: 40px 0;
-  margin-left: -2.5%;
+  margin-left: -3.125%;
   text-align: center;
   padding: 0.5em 0;
-  width: 105%;
+  width: 106.25%;
   position: relative;
 }
 
