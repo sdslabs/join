@@ -218,7 +218,7 @@ Author's custom styles
   border-top: 1px dashed #cecece;
   border-bottom: 1px dashed #cecece;
   padding: 20px 0;
-  font-size: 25px;
+  font-size: 30px;
   color: white;
 }
 
@@ -341,7 +341,7 @@ Author's custom styles
 }
 
 .container .divider .divider-head {
-  font-family : Open Sans;
+  font-family : Open Sans Semibold;
   font-size: 32px;
   text-align: center;
   padding: 11px;
@@ -474,8 +474,12 @@ Author's custom styles
 }
 
 .container .eventlist {
-  margin: 60px 0px;
+  margin: 80px 0px;
 
+}
+
+.container .eventlist .cover {
+  margin: 0px -25px;
 }
 
 .container .event {
@@ -494,16 +498,16 @@ Author's custom styles
 
 
 .container .event .title {
-  font-family : Open Sans;
+  font-family : Open Sans Semibold;
   font-size : 24px;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing : 0.48px;
   color : #840000;
   color : rgb(132, 0, 0);
 }
 
 .container .event .description {
-  font-family : Open Sans;
+  font-family : Open Sans Semibold;
   font-size : 16px;
   line-height : 23px;
   letter-spacing : 0.32px;
@@ -520,7 +524,7 @@ Author's custom styles
 }
 
 .container .problem_statement {
-  width: 275px;
+  width: 277px;
   padding: 10px;
 }
 
@@ -542,7 +546,8 @@ Author's custom styles
 }
 
 .container .ribbon {
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
 
 .container .disclaimer {
@@ -575,6 +580,14 @@ Author's custom styles
   color : #28292B;
   color : rgb(40, 41, 43);
   text-decoration: none;
+}
+
+.container .button {
+  opacity: 0.8;
+}
+
+.container .button:hover {
+  opacity: 1.0;
 }
 
 /* Table */
