@@ -615,6 +615,10 @@ Author's custom styles
   opacity: 1.0;
 }
 
+.font-bold {
+  font-size: 30px;
+}
+
 /* Table */
 .shortlist th {
   font-weight: bold;
