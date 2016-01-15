@@ -7,7 +7,7 @@ Licensed under GPL and MIT.
 /* `Basic HTML
 ----------------------------------------------------------------------------------------------------*/
 body {
-  font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+  font: 13px/1.5 'Open Sans', Arial, 'Liberation Sans', FreeSans, sans-serif;
 }
 
 pre,code {
@@ -199,7 +199,6 @@ Author's custom styles
 }
 
 .container .jist {
-  font-family: Open Sans;
   font-size: 16px;
   margin: 20px 0;
 }
@@ -347,7 +346,7 @@ Author's custom styles
 }
 
 .container .divider .divider-head {
-  font-family : Open Sans Semibold;
+  font-family : Semibold;
   font-size: 32px;
   text-align: center;
   padding: 11px;
@@ -504,7 +503,7 @@ Author's custom styles
 
 
 .container .event .title {
-  font-family : Open Sans Semibold;
+  font-family : Semibold;
   font-size : 24px;
   font-weight: normal;
   letter-spacing : 0.48px;
@@ -513,7 +512,7 @@ Author's custom styles
 }
 
 .container .event .description {
-  font-family : Open Sans Semibold;
+  font-family : Semibold;
   font-size : 16px;
   line-height : 23px;
   letter-spacing : 0.32px;
@@ -535,7 +534,6 @@ Author's custom styles
 }
 
 .container .problem_statement .light {
-  font-family : Open Sans;
   font-size : 16px;
   line-height : 30.6px;
   letter-spacing : 0.36px;
@@ -543,7 +541,6 @@ Author's custom styles
 }
 
 .container .problem_statement .bold {
-  font-family : Open Sans;
   font-weight : bold;
   font-size : 16px;
   line-height : 30.6px;
@@ -552,7 +549,6 @@ Author's custom styles
 }
 
 .direct-enteries {
-  font-family : Open Sans;
   /*font-weight : bold;*/
   font-size : 18px !important;
   line-height : 30.6px;
@@ -565,7 +561,6 @@ Author's custom styles
 }
 
 .container .disclaimer {
-  font-family : Open Sans;
   font-size : 16px;
   line-height : 24px;
   letter-spacing : 0.32px;
@@ -577,7 +572,6 @@ Author's custom styles
 
 .container .message {
   margin: auto;
-  font-family : Open Sans;
   font-size : 16px;
   line-height : 30.6px;
   letter-spacing : 0.36px;
@@ -617,6 +611,14 @@ Author's custom styles
 
 .font-bold {
   font-size: 30px;
+}
+
+.dev-short {
+  margin-left: 22%;
+}
+
+.des-short {
+  margin-right: 22%;
 }
 
 /* Table */
