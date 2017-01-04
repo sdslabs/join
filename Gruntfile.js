@@ -15,7 +15,7 @@ module.exports = function(grunt){
 					cwd: '<%= join.src %>',
 					dest: '<%= join.dist %>',
 					src: [
-						'**/*.{js,html,ico,png,jpg,jpeg,gif,txt}',
+						'**/*.{js,html,ico,png,jpg,jpeg,gif,txt,svg}',
 						'.htaccess'
 					]
 				}]
@@ -26,7 +26,7 @@ module.exports = function(grunt){
 					dot: true,
 					cwd: '<%= join.src %>/images',
 					dest: '<%= join.dist %>/images',
-					src: ['**/*.{ico, png, jpg, jpeg, gif}']	
+					src: ['**/*.{ico,png,jpg,jpeg,gif,svg}']	
 				}]
 			},
 			html : {
@@ -35,7 +35,7 @@ module.exports = function(grunt){
 					dot: true,
 					cwd: '<%= join.src %>',
 					dest: '<%= join.dist %>',
-					src: ['**/*.html']
+					src: ['**/*.html', '.htaccess']
 				}]
 			},
 			js : {
@@ -54,7 +54,7 @@ module.exports = function(grunt){
 					cwd: '<%= join.src %>',
 					dest: '<%= join.dist %>',
 					src: [
-						'**/*.{ico,txt}',
+						'**/*.{ico,svg,txt}',
 						'.htaccess',
 					]
 				}]	
@@ -74,7 +74,7 @@ module.exports = function(grunt){
 			images: {
 				files: [{
 					dot: true,
-					src: ['<%= join.dist %>/images/**/*.{ico, png, jpg, jpeg, gif}']
+					src: ['<%= join.dist %>/images/**/*.{ico,png,jpg,jpeg,gif,svg}']
 				}]
 			},
 			html: {
@@ -200,7 +200,7 @@ module.exports = function(grunt){
     			}
 			},
 			images: {
-				files: 'src/images/**/*',
+				files: 'src/images/**/*.{png,jpeg,jpg,ico,svg}',
 				tasks : ['clean:images','copy:images'],
 				options: {
       				livereload: '<%= connect.options.livereload %>',

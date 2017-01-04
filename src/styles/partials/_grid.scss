@@ -1,6 +1,9 @@
 .container {
+  position: relative;
 	margin: 0 auto;
 	width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh; 
 }
 
 .container:after,
@@ -12,7 +15,7 @@
 
 [class*='col-'] {
   float: left;
-  padding: 0px 15px;
+  padding: 0px 1vw;
   width: 100%;
   min-height: 1px;
 }
@@ -20,7 +23,7 @@
 @media #{$breakpoint-small} {
 	.container {
 		width: 95%;
-		max-width: 1170px;
+		max-width: 1370px;
 	}
 
 	@for $i from 1 through 12 {

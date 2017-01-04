@@ -1,2 +1,13 @@
 $breakpoint-small: 'only screen and (min-width: 768px)';
 $breakpoint-large: 'only screen and (min-width: 1200px)';
+
+$base-path: '../images/';
+$image-path-schedule: $base-path + 'schedule.svg';
+$image-path-challenges: $base-path + 'challenges.svg';
+$image-path-procedure: $base-path + 'procedure.svg';
+$image-path-whysds: $base-path + 'whysds.svg';
+$image-path-recruitment: $base-path + 'recruitment-test-icon.svg';
+$image-path-competitions: $base-path + 'competitions-icon.svg';
+$image-path-interviews: $base-path + 'interviews-icon.svg';
+$image-path-intro: $base-path + 'intro-talk-icon.svg';
+$image-path-results: $base-path + 'results-icon.svg'; 

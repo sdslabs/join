@@ -2,68 +2,168 @@
 	<head>
 		<title>Join SDSLabs</title>
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
-		<script type="text/javascript" src="scripts/script.js"></script>
 	</head>
 	<body>
 		<div class="container">	
-			<nav class="page-nav">
+			<nav class="page-nav hidden">
 				<div class="logo">
-					<img src="">
+					<img src="images/logo.png"> <p>Recruitments 2017</p>
 				</div>
 				<div class="navbar">
-					<div class="navbar-item">
-						<a href="#schedule">Schedule</a>
+					<div class="navbar-item active">
+						<a class="navbar-item-link" data_target="0" href="/">Home</a>
 					</div>
 					<div class="navbar-item">
-						<a href="#procedure">Procedure</a>
+						<a class="navbar-item-link" data_target="1" href="/schedule">Schedule</a>
 					</div>
 					<div class="navbar-item">
-						<a href="#challenges">Challenges</a>
+						<a class="navbar-item-link" data_target="2" href="/procedure">Procedure</a>
+					</div>
+					<div class="navbar-item">
+						<a class="navbar-item-link" data_target="3" href="/challenges">Challenges</a>
 					</div>	
 					<div class="navbar-item">
-						<a href="#whysds">Why SDS?</a>
+						<a class="navbar-item-link" data_target="4" href="/whysds">Why SDS?</a>
 					</div>
 				</div>
 			</nav>
-			<div class="recruit">
-				<div class="recruit-desc-container col-sm-6">
-					<div class="logo">
-						<img src="">
+			<div class="page-container">
+				<div class="page selected" id="recruit">
+					<div class="recruit-desc-container col-sm-5">
+						<div class="recruit-desc">
+							<img class="recruit-desc-logo" src="images/logo.png">
+							<h1 class="recruit-desc-heading">Recruitment<br/> 2017</h1>
+							<p class="recruit-desc-text">
+								SDSLabs is a student group that makes technological products at IIT Roorkee. We are innovating in a lot of technical areas and aim to make lives easier for everyone. Promote innovation through joining us.
+							</p>
+						</div>
 					</div>
-					<div class="recruit-desc">
-						<h1 class="recruit-desc-heading">Recruitments 2017</h1>
-						<p class="recruit-desc-text">
-							SDSLabs is a student group that makes technological products at IIT Roorkee. We are innovating in a lot of technical areas and aim to make lives easier for everyone. Promote innovation through joining us.
-						</p>
+					<div class="recruit-nav col-sm-6">
+						<div class="recruit-nav-list-item-container">
+							<a class="recruit-nav-list-item-link" href="#0" data_target="1">										
+								<div class="content">	
+									<div class="icon-container">
+										<div class="icon--schedule icon"></div>
+									</div>	
+									<div class="recruit-nav-icon-title">Schedule</div>
+								</div>	
+							</a>	
+						</div>
+						<div class="recruit-nav-list-item-container">
+							<a class="recruit-nav-list-item-link" data_target="2" href="#0">	
+								<div class="content">	
+									<div class="icon-container">
+										<div class="icon--schedule icon"></div>
+									</div>	
+									<div class="recruit-nav-icon-title">Schedule</div>
+								</div>	
+							</a>	
+						</div>
+						<div class="recruit-nav-list-item-container">
+							<a class="recruit-nav-list-item-link" data_target="3" href="#0">	
+								<div class="content">	
+									<div class="icon-container">
+										<div class="icon--schedule icon"></div>
+									</div>	
+									<div class="recruit-nav-icon-title">Schedule</div>
+								</div>	
+							</a>	
+						</div>
+						<div class="recruit-nav-list-item-container">
+							<a class="recruit-nav-list-item-link" data_target="4" href="#0">	
+								<div class="content">	
+									<div class="icon-container">
+										<div class="icon--schedule icon"></div>
+									</div>	
+									<div class="recruit-nav-icon-title">Schedule</div>
+								</div>	
+							</a>	
+						</div>
 					</div>
 				</div>
-				<div class="recruit-nav col-sm-6">
-					<div class="recruit-nav-list-item-container col-sm-6">
-						<div class="recruit-nav-list-item">	
-							<img class="recruit-nav-list-item-icon" src="">
-							<span><a class="recruit-nav-list-item-link" href="#schedule">Schedule</a></span>
+				<div class="page" id="schedule">
+					<h1 class="schedule-heading">Schedule</h1>
+					<div class="schedule-timeline">
+						<div class="timeline-line"></div>
+						<div class="schedule-timeline-item">
+							<div class="timeline-icon-container">
+								<div class="timeline-icon icon--competitions"></div>
+							</div>
+							<div class="timeline-item-desc">
+								<h3 class="timeline-item-heading">Competitions</h3>
+								<ul class="timeline-item-list">
+									<li>Endgame</li>
+									<li>Codeblitz</li>
+									<li>noobCTF</li>
+									<li>Additional tasks</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-					<div class="recruit-nav-list-item-container col-sm-6">
-						<div class="recruit-nav-list-item">	
-							<img class="recruit-nav-list-item-icon" src="">
-							<span><a class="recruit-nav-list-item-link" href="#schedule">Procedure</a></span>
+						<div class="schedule-timeline-item">
+							<div class="timeline-icon-container">
+								<div class="timeline-icon icon--intro"></div>
+							</div>
+							<div class="timeline-item-desc">
+								<h3 class="timeline-item-heading">Intro Talk</h3>
+								<ul class="timeline-item-list">
+									<li>January 6th, 2017</li>
+									<li>Friday</li>
+									<li>6:00 PM</li>
+									<li>ECE Auditorium</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-					<div class="recruit-nav-list-item-container col-sm-6">
-						<div class="recruit-nav-list-item">	
-							<img class="recruit-nav-list-item-icon" src="">
-							<span><a class="recruit-nav-list-item-link" href="#schedule">Challenges</a></span>
+						<div class="schedule-timeline-item">
+							<div class="timeline-icon-container">
+								<div class="timeline-icon icon--recruitment"></div>
+							</div>
+							<div class="timeline-item-desc">
+								<h3 class="timeline-item-heading">Recruitment Test</h3>
+								<ul class="timeline-item-list">
+									<li>January 10th, 2017</li>
+									<li>Tuesday</li>
+									<li>6:00 PM</li>
+									<li>Lecture Hall Complex</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-					<div class="recruit-nav-list-item-container col-sm-6">
-						<div class="recruit-nav-list-item">	
-							<img class="recruit-nav-list-item-icon" src="">
-							<span><a class="recruit-nav-list-item-link" href="#schedule">Why SDS?</a></span>
+						<div class="schedule-timeline-item">
+							<div class="timeline-icon-container">
+								<div class="timeline-icon icon--interviews"></div>
+							</div>
+							<div class="timeline-item-desc">
+								<h3 class="timeline-item-heading">Interviews</h3>
+								<ul class="timeline-item-list">
+									<li>January 11th, 2017</li>
+									<li>Wednesday</li>
+									<li>6:30 PM onwards</li>
+									<li>SDSLabs, Hobbies Club</li>
+								</ul>
+							</div>
+						</div>
+						<div class="schedule-timeline-item">
+							<div class="timeline-icon-container">
+								<div class="timeline-icon icon--results"></div>
+							</div>
+							<div class="timeline-item-desc">
+								<h3 class="timeline-item-heading">Result</h3>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+				<div class="page" id="schedule">
+					Bello
+				</div>
+				<div class="page" id="schedule">
+					Cello
+				</div>
+				<div class="page" id="schedule">
+					Dello
+				</div>
+			</div>	
 		</div>	
 	</body>	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"> 	
+	</script>
+	<script type="text/javascript" src="scripts/script.js"></script>
 </html>
