@@ -236,7 +236,75 @@
 	margin-top: 50px;
 }
 
+.procedure-item-button-container {
+	margin-top: 30px;
+}
+
+.procedure-desc-item p{
+	margin-top: 30px;
+}
+
 .procedure-item-heading {
 	display: inline-block;
 	margin-top: 17px;
+}
+
+.procedure-item-button {
+	margin: 1.075%;
+	width: 45.82%;
+	border-radius: 8px;
+	display:inline-block;
+}
+
+.procedure-footer {
+	margin-top: 84px;
+}
+
+.challenges-item-list {
+	margin-top: 46px;
+	margin-left: 30px;
+	li {
+		margin-top: 20px;
+
+	}
+}
+
+.challenges-gallery {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.challenges-gallery-item-container {
+	width: 30%;
+}
+
+.challenges-gallery-item {
+	@include aspect-ratio(140, 196);
+	border-radius: 8px;
+	border: 1px solid #E8E8E8;
+
+	&:hover {
+		box-shadow: 0px 20px 30px rgba(116, 128, 144, 0.15);
+	}
+}
+
+.whysds-text {
+	margin-top: 32px;
+}
+
+.whysds-gallery {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.whysds-gallery-item-container {
+	width: 21.4%;
+}
+
+.whysds-gallery-item {
+	@include aspect-ratio(219, 157);
+	border-radius: 8px;
+	border: 1px solid black;
 }

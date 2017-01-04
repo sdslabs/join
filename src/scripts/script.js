@@ -100,7 +100,7 @@ jQuery(document).ready(function($){
 		$(pages[index]).removeClass('enter-left');
 	}
 
-	matchURL(pageUrls[1]);
+	matchURL(document.location.href);
 
 
 });

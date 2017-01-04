@@ -6,13 +6,12 @@
 	<body>
 		<div class="container">	
 			<nav class="page-nav hidden">
-				<div class="logo">
-					<img src="/images/logo.png"> <p>Recruitments 2017</p>
-				</div>
-				<div class="navbar">
-					<div class="navbar-item active">
-						<a class="navbar-item-link" data_target="0" href="/">Home</a>
+				<a class="navbar-item-link" data_target="0" href="/">	
+					<div class="logo">
+						<img src="/images/logo.png"> <p>Recruitments 2017</p>
 					</div>
+				</a>	
+				<div class="navbar">
 					<div class="navbar-item">
 						<a class="navbar-item-link" data_target="1" href="/schedule">Schedule</a>
 					</div>
@@ -40,7 +39,7 @@
 					</div>
 					<div class="recruit-nav col-sm-6">
 						<div class="recruit-nav-list-item-container">
-							<a class="recruit-nav-list-item-link" href="#0" data_target="1">										
+							<a class="recruit-nav-list-item-link" href="/schedule" data_target="1">										
 								<div class="content">	
 									<div class="icon-container">
 										<div class="icon--schedule icon"></div>
@@ -50,32 +49,32 @@
 							</a>	
 						</div>
 						<div class="recruit-nav-list-item-container">
-							<a class="recruit-nav-list-item-link" data_target="2" href="#0">	
+							<a class="recruit-nav-list-item-link" data_target="2" href="/procedure">	
 								<div class="content">	
 									<div class="icon-container">
-										<div class="icon--schedule icon"></div>
+										<div class="icon--procedure icon"></div>
 									</div>	
-									<div class="recruit-nav-icon-title">Schedule</div>
+									<div class="recruit-nav-icon-title">Procedure</div>
 								</div>	
 							</a>	
 						</div>
 						<div class="recruit-nav-list-item-container">
-							<a class="recruit-nav-list-item-link" data_target="3" href="#0">	
+							<a class="recruit-nav-list-item-link" data_target="3" href="/challenges">	
 								<div class="content">	
 									<div class="icon-container">
-										<div class="icon--schedule icon"></div>
+										<div class="icon--challenges icon"></div>
 									</div>	
-									<div class="recruit-nav-icon-title">Schedule</div>
+									<div class="recruit-nav-icon-title">Challenges</div>
 								</div>	
 							</a>	
 						</div>
 						<div class="recruit-nav-list-item-container">
-							<a class="recruit-nav-list-item-link" data_target="4" href="#0">	
+							<a class="recruit-nav-list-item-link" data_target="4" href="/whysds">	
 								<div class="content">	
 									<div class="icon-container">
-										<div class="icon--schedule icon"></div>
+										<div class="icon--whysds icon"></div>
 									</div>	
-									<div class="recruit-nav-icon-title">Schedule</div>
+									<div class="recruit-nav-icon-title">Why SDS?</div>
 								</div>	
 							</a>	
 						</div>
@@ -167,18 +166,83 @@
 				<div class="page" id="procedure">
 					<h1 class="procedure-heading">Procedure</h1>
 					<div class="procedure-desc-container">
-						<div class="procedure-desc-item">
-							<h3 class="procedure-item-heading">Interviews</h3>&nbsp;&nbsp;<span class="small">(First year only*)</span>
+						<div class="procedure-desc-item col-sm-6">
+							<h3 class="procedure-item-heading">Designers</h3>&nbsp;&nbsp;<span class="small">(First year only*)</span>
 							<p>Download the design problem statement through the button and submit your entries using the form below. </p>
-							<p>Last date of submission: January 10th, 2017 ( till 11:59PM)</p>
+							<p>Last date of submission: <span class="bold">January 10th, 2017 ( till 11:59PM)</span></p>
+							<div class="procedure-item-button-container">
+								<div class="button procedure-item-button">Problem Statement</div>
+								<div class="button procedure-item-button">Submission Form</div>
+							</div>
+						</div>
+						<div class="procedure-desc-item col-sm-6">
+							<h3 class="procedure-item-heading">Developers</h3>&nbsp;&nbsp;<span class="small">(First year only*)</span>
+							<p>Selected candidates from written test will be called for interviews. Written test details are as follows:  </p>
+							<p>Date: <span class="bold">January 10th, 2017</span>&nbsp;&nbsp;&nbsp;Time: <span class="bold">6:00PM</span>&nbsp;&nbsp;&nbsp;Venue: <span class="bold">LHC</span></p>
+							<p><span class="bold">Direct Interview entries :</span><br/> Winner of Backdoor, Codeblitz, noobCTF</p>
 						</div>
 					</div>
 				</div>
-				<div class="page" id="schedule">
-					Cello
+				<div class="page" id="challenges">
+					<h1 class="procedure-heading">Challenges</h1>
+					<div class="procedure-desc-container">
+						<div class="procedure-desc-item col-sm-6">
+							<h3 class="procedure-item-heading">We have some awesome challenges to fuel your passion</h3>
+							<ul class="challenges-item-list">
+								<li>Hack some challenges on <a class="challenge-link" src="https://backdoor.sdslabs.co" target="_blank">Backdoor</a></li>
+								<li>Get a high score on <a class="challenge-link" src="https://erdos.sdslabs.co" target="_blank">Erdos</a></li>
+								<li>Solve some problems on <a class="challenge-link" src="https://codevillage.sdslabs.co" target="_blank">Codevillage</a></li>
+								<li>Make a valuable pull request for any SDSLabs project on <a class="challenge-link" src="https://github.com/sdslabs" target="_blank">Github</a></li>
+							</ul>
+						</div>
+						<div class="procedure-desc-item col-sm-6">
+							<h3 class="procedure-item-heading">Competition Posters</h3>
+							<div class="challenges-gallery">
+								<div class="challenges-gallery-item-container">
+									<div class="challenges-gallery-item">
+									</div>
+								</div>
+								<div class="challenges-gallery-item-container">
+									<div class="challenges-gallery-item">
+									</div>
+								</div>
+								<div class="challenges-gallery-item-container">
+									<div class="challenges-gallery-item">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="page" id="schedule">
-					Dello
+				<div class="page" id="whysds">
+					<h1 class="whysds-heading">Why SDS?</h1>
+					<p class="whysds-text">
+						Last year saw 8 selections from SDSLabs in the Google Summer of Code. With clean sweeps in Microsoft Build The Shield (National ranks 1 and 2) and Code.fun.do (3 out of top 4 teams), we also won the NYU CSAW CTF.
+				    </p>
+				    <p class="whysds-text">
+						Our members, with their remarkable skills in various fields like web development, information security, machine learning, game development, landed jobs in companies like Google, Microsoft, Adobe, Goldman Sachs & Facebook. Our alumni base ranges from the co-founders of Razorpay to the researchers in universities like Georgia Tech, NYU & MIT.
+				    </p>
+				    <div class="whysds-gallery">
+				    	<div class="whysds-gallery-item-container">
+				    		<div class="whysds-gallery-item">
+							</div>
+				    	</div>
+				    	<div class="whysds-gallery-item-container">
+				    		<div class="whysds-gallery-item">
+							</div>
+				    	</div>
+				    	<div class="whysds-gallery-item-container">
+				    		<div class="whysds-gallery-item">
+								<div class="content">
+				    				<img class="content" src="/images/whysds3.jpg">
+								</div>
+							</div>
+				    	</div>
+				    	<div class="whysds-gallery-item-container">
+				    		<div class="whysds-gallery-item">
+							</div>
+				    	</div>
+				    </div>
 				</div>
 			</div>	
 		</div>	

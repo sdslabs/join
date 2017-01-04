@@ -62,6 +62,26 @@ ul {
 	}
 }
 
+a {
+	font-weight: 500;
+	font-size: 18px;
+	font-size: 1.3vw;
+	line-height: 1.4;
+	color: #767784;
+	text-decoration: none;
+
+	&:hover, &:active, &:focus {
+		color: #00000;
+		text-decoration: none;
+	}
+}
+
+
+.button {
+	font-size: 16px;
+	font-size: 1.1vw;
+}
+
 .small {
 	font-family: inherit;
 	font-weight: 500;
@@ -70,3 +90,8 @@ ul {
 	line-height: 1.4;
 	color: #A3A8AD
 }
+
+.bold {
+	font-weight: bold;
+}
+
