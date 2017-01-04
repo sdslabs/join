@@ -1,0 +1,370 @@
+/********NAVBAR*******/
+
+.page-nav{
+	width: 100%;
+	display: flex;
+	top:0;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	height: 60px;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	width: 55%;
+	max-width: 600px;
+	height: 60px;
+}
+
+.navbar-item {
+	display: inline-block;
+	padding: 20px 0;
+
+}
+
+.navbar-item.active{
+	border-bottom: 4px solid #26DCCE; 
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	
+
+	img {
+		width: 40%;
+		margin-right: 11px;
+	}
+}
+
+
+/****MULTIPLE PAGES****/
+
+.page-container {
+	position: relative;
+	margin-top: 10%;
+}
+
+.page {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	left: 0;
+	top: 0;
+	transform: translateX(-100%);
+	opacity: 0;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-in-out;
+}
+
+.page.selected {
+	position: relative;
+	z-index: 2;
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.page.enter-right, .page.leave-right {
+	animation-name: anim-enter-right;
+}
+
+.page.enter-left, .page.leave-left {
+	animation-name: anim-enter-left;
+}
+
+.page.leave-right, .page.leave-left {
+	animation-direction: reverse;
+}
+
+/****MAIN PAGE ELEMENTS****/
+
+.recruit {
+	width: 100%;
+}
+
+.recruit-desc-logo {
+	width: 47%;
+}
+
+.recruit-desc-heading {
+	margin-top: 21px;
+}
+
+.recruit-desc-text {
+	margin-top: 40px
+}
+
+.recruit-nav {
+	margin-left: 8.33%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.recruit-nav-list-item-container {
+	text-align: center;
+	margin: 2%;
+	width: 46%;
+}
+
+.recruit-nav-list-item-link {
+	display: block;
+	@include aspect-ratio(220, 192);
+	border: 1px solid #E8E8E8;
+	border-radius: 8px;
+
+	&:hover {
+		box-shadow: 0px 20px 30px rgba(116, 128, 144, 0.15);
+	}	
+}
+
+.icon-container {
+	margin: 0 auto;
+	margin-top: 20%;
+	width: 30%;
+}
+
+.icon {
+	@include aspect-ratio(67, 58);
+}
+
+.recruit-nav-icon-title {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 20%;
+}
+
+.icon--schedule {
+  @include dump-bg-image-styles($image-path-schedule);
+}
+
+.icon--challenges {
+  @include dump-bg-image-styles($image-path-challenges);	
+}
+
+.icon--procedure {
+  @include dump-bg-image-styles($image-path-procedure);
+}
+
+.icon--whysds {
+  @include dump-bg-image-styles($image-path-whysds);
+}
+
+/****SCHEDULE****/
+
+.timeline-line {
+	height: 1px;
+	margin: 0 5%;
+	margin-top: 4.44375%;
+	width: 85%;
+	position: absolute;
+	background: #C6CDD9;
+	z-index: 1;
+}
+
+.schedule-timeline {
+	position: relative;
+	margin-top: 55px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.schedule-timeline-item {
+	width: 15%;
+	z-index: 2;
+}
+
+.timeline-icon-container {
+	width: 59.25%;
+	background: #FFF;
+}
+
+.timeline-icon {
+	border: 1px solid #DFE5EF;
+	border-radius: 100%;
+	@include aspect-ratio(1, 1);
+}
+
+.timeline-item-desc {
+	position: relative;
+	margin-top: 50px;
+}
+
+.timeline-item-heading-container {
+	position: absolute;
+	top: 0;
+}
+
+.timeline-item-list-container {
+	position: relative;
+	top: 100px;
+	margin-left: 22px;
+}
+
+.icon--interviews {
+  @include dump-bg-image-styles($image-path-interviews);
+  background-size: 60%;
+}
+
+.icon--intro {
+  @include dump-bg-image-styles($image-path-intro);
+  background-size: 60%;
+}
+
+.icon--results {
+  @include dump-bg-image-styles($image-path-results);
+  background-size: 60%;
+}
+
+.icon--competitions {
+  @include dump-bg-image-styles($image-path-competitions);
+  background-size: 60%;
+}
+
+.icon--recruitment {
+  @include dump-bg-image-styles($image-path-recruitment);
+  background-size: 60%;
+}
+
+/****PROCEDURE****/
+
+.procedure-desc-container {
+	margin-top: 50px;
+}
+
+.procedure-item-button-container {
+	margin-top: 30px;
+}
+
+.procedure-desc-item p{
+	margin-top: 30px;
+}
+
+.procedure-item-heading {
+	display: inline-block;
+	margin-top: 17px;
+}
+
+.procedure-item-button {
+	margin: 1.075%;
+	width: 45.82%;
+	border-radius: 8px;
+	display:inline-block;
+}
+
+.procedure-footer {
+	margin-top: 84px;
+}
+
+.icon--problem {
+	@include dump-bg-image-styles($image-path-problem);
+    background-size: 10%;
+    background-position: 10%;
+}
+
+.icon--form {
+	@include dump-bg-image-styles($image-path-form);
+	background-size: 10%;
+	background-position: 10%;
+}
+
+.challenges-item-list {
+	margin-top: 46px;
+	margin-left: 30px;
+	li {
+		margin-top: 20px;
+
+	}
+}
+
+.challenges-gallery {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.challenges-gallery-item-container {
+	width: 30%;
+}
+
+.challenges-gallery-item {
+	@include aspect-ratio(140, 196);
+	border-radius: 8px;
+	border: 1px solid #E8E8E8;
+
+	&:hover {
+		box-shadow: 0px 20px 30px rgba(116, 128, 144, 0.15);
+	}
+}
+
+.whysds-text {
+	margin-top: 32px;
+}
+
+.whysds-gallery {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.whysds-gallery-item-container {
+	width: 21.4%;
+}
+
+.whysds-gallery-item {
+	@include aspect-ratio(219, 157);
+	border-radius: 8px;
+	border: 1px solid black;
+}
+
+/****LEFT AND RIGHT NAVIGATION BUTTONS****/
+.nav-side {
+	position: fixed;
+	top: 0;
+	display: flex;
+	align-items: center;
+	width: 4.39vw;
+	height: 100%;
+	button {
+		background: none;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		border: 1px solid #DFE5EF;
+		border-radius: 0;
+
+		height: 8.78vw;
+		width: 100%;
+		
+		transition: 0.3s ease-in-out;
+	}
+	button:hover {
+		cursor: pointer;
+		box-shadow: 0px 0px 5px rgba(116, 128, 144, 0.15);
+	}
+	button:focus {
+		outline: none;
+	}
+}
+
+.nav-right {
+	right: 0;
+	button {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		background-image: url("/images/right-arrow.svg");
+	}
+}
+
+.nav-left {
+	left: 0;
+	button {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		background-image: url("/images/left-arrow.svg");
+	}
+}
