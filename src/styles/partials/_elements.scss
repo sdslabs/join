@@ -159,8 +159,8 @@
 .timeline-line {
 	height: 1px;
 	margin: 0 5%;
-	margin-top: 2.9625%;
-	width: 90%;
+	margin-top: 4.44375%;
+	width: 85%;
 	position: absolute;
 	background: #C6CDD9;
 	z-index: 1;
@@ -168,13 +168,13 @@
 
 .schedule-timeline {
 	position: relative;
-	margin-top: 50px;
+	margin-top: 55px;
 	display: flex;
 	justify-content: space-between;
 }
 
 .schedule-timeline-item {
-	width: 10%;
+	width: 15%;
 	z-index: 2;
 }
 
@@ -194,13 +194,15 @@
 	margin-top: 50px;
 }
 
-.timeline-item-heading {
+.timeline-item-heading-container {
 	position: absolute;
+	top: 0;
 }
 
-.timeline-item-list {
-	position: absolute;
-	margin-top: 100px;
+.timeline-item-list-container {
+	position: relative;
+	top: 100px;
+	margin-left: 22px;
 }
 
 .icon--interviews {
@@ -226,4 +228,15 @@
 .icon--recruitment {
   @include dump-bg-image-styles($image-path-recruitment);
   background-size: 60%;
+}
+
+/****PROCEDURE****/
+
+.procedure-desc-container {
+	margin-top: 50px;
+}
+
+.procedure-item-heading {
+	display: inline-block;
+	margin-top: 17px;
 }

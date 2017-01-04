@@ -1,7 +1,7 @@
 .container {
   position: relative;
 	margin: 0 auto;
-	width: 100%;
+	width: 75%;
   overflow-x: hidden;
   min-height: 100vh; 
 }
@@ -22,7 +22,7 @@
 
 @media #{$breakpoint-small} {
 	.container {
-		width: 95%;
+		width: 75%;
 		max-width: 1370px;
 	}
 

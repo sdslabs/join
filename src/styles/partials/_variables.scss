@@ -1,7 +1,7 @@
 $breakpoint-small: 'only screen and (min-width: 768px)';
 $breakpoint-large: 'only screen and (min-width: 1200px)';
 
-$base-path: '../images/';
+$base-path: '/images/';
 $image-path-schedule: $base-path + 'schedule.svg';
 $image-path-challenges: $base-path + 'challenges.svg';
 $image-path-procedure: $base-path + 'procedure.svg';
