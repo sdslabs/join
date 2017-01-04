@@ -1,0 +1,31 @@
+/********NAVBAR*******/
+
+.page-nav{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar {
+	display: flex;
+}
+
+.navbar-item {
+	padding: 1.5em;
+	padding: 1.5vw 2vw;
+}
+
+
+/****MAIN PAGE ELEMENTS****/
+
+.recruit {
+	width: 100%;
+}
+
+.recruit-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+}
