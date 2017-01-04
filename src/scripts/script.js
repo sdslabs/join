@@ -3,19 +3,19 @@ jQuery(document).ready(function($){
 	var slide = 0;
 
     var routes = {
-        "/schedule/": "schedule",
-        "/procedure/": "procedure",
-        "/challenges/": "challenges",
-        "/whysds/": "whysds",
+        "/schedule": "schedule",
+        "/procedure": "procedure",
+        "/challenges": "challenges",
+        "/whysds": "whysds",
         "/": "root"
   	};
 
   	var pageUrls = {
   		0 : "/",
-  		1 : "/schedule/",
-  		2 : "/procedure/",
-  		3 : "/challenges/",
-  		4 : "/whysds/"
+  		1 : "/schedule",
+  		2 : "/procedure",
+  		3 : "/challenges",
+  		4 : "/whysds"
   	};
 
   	var navLeftButton = $('#nav-left-button');
@@ -33,10 +33,9 @@ jQuery(document).ready(function($){
     function matchURL(url) {
         for (var index in routes)
         {
-            var re = new RegExp(index);
-            if(url.match(re))
+            if(url == index)
             {
-            	if(url != document.location.href) {
+            	if(url != document.location.pathname) {
                     window.history.pushState(null, null, url);
                 }
             	for(var key in pageUrls) {
@@ -137,5 +136,21 @@ jQuery(document).ready(function($){
 	navLeftButton.on('click', sideNavClick.left);
 	navRightButton.on('click', sideNavClick.right);
 
-	matchURL(document.location.href);
+	$('body').keydown(function (e) {
+		var keyCode = e.keyCode || e.which,
+		  arrow = {left: 37, up: 38, right: 39, down: 40 };
+
+		switch (keyCode) {
+			case arrow.left:
+			case arrow.up:
+				navLeftButton.click();
+			break;
+			case arrow.right:
+			case arrow.down:
+				navRightButton.click();
+			break;
+		}
+	});
+
+	matchURL(document.location.pathname);
 });
