@@ -18,6 +18,10 @@ jQuery(document).ready(function($){
   		4 : "/whysds/"
   	};
 
+  	var navLeftButton = $('#nav-left-button');
+  	var navRightButton = $('#nav-right-button');
+
+  	var navbar = $('.navbar');
   	var pageNavbar = $('.page-nav');
 	var homeLinkContainer = $('.recruit-nav');	
 	var pageContainer = $('.page-container');
@@ -90,7 +94,28 @@ jQuery(document).ready(function($){
 			$(pageNavbar).addClass('hidden');
 		}
 
+		if (nextSlideIndex > 0) {
+			var child = $(navbar).children()[nextSlideIndex];
+			$(child).addClass('active');
+		}
+
+		if (prevSlideIndex > 0) {
+			var child = $(navbar).children()[prevSlideIndex];
+			$(child).removeClass('active');
+		}
+
 		slide = nextSlideIndex;
+
+		if (slide === 0) {
+			navLeftButton.hide();
+		}
+		else if (slide === Object.keys(pageUrls).length-1) {
+			navRightButton.hide();
+		}
+		else {
+			navLeftButton.show();
+			navRightButton.show();
+		}
 	}
 
 	function removeClasses(index) {
@@ -100,7 +125,16 @@ jQuery(document).ready(function($){
 		$(pages[index]).removeClass('enter-left');
 	}
 
-	matchURL(pageUrls[1]);
+	var sideNavClick = {
+		left: function() {
+			matchURL(pageUrls[slide-1]);	
+		},
+		right: function() {
+			matchURL(pageUrls[slide+1]);
+		}
+	}
 
+	navLeftButton.on('click', sideNavClick.left);
+	navRightButton.on('click', sideNavClick.right);
 
 });

@@ -240,3 +240,51 @@
 	display: inline-block;
 	margin-top: 17px;
 }
+
+/****LEFT AND RIGHT NAVIGATION BUTTONS****/
+.nav-side {
+	position: fixed;
+	top: 0;
+	display: flex;
+	align-items: center;
+	width: 4.39vw;
+	height: 100%;
+	button {
+		background: none;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		border: 1px solid #DFE5EF;
+		border-radius: 0;
+
+		height: 8.78vw;
+		width: 100%;
+		
+		transition: 0.3s ease-in-out;
+	}
+	button:hover {
+		cursor: pointer;
+		box-shadow: 0px 0px 5px rgba(116, 128, 144, 0.15);
+	}
+	button:focus {
+		outline: none;
+	}
+}
+
+.nav-right {
+	right: 0;
+	button {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		background-image: url("/images/right-arrow.svg");
+	}
+}
+
+.nav-left {
+	left: 0;
+	button {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		background-image: url("/images/left-arrow.svg");
+	}
+}
