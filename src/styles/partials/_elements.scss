@@ -10,32 +10,64 @@
 	height: 60px;
 }
 
+.nav-shadow {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 60px;
+	margin: 0;
+	box-shadow: 0px 3px 15px rgba(116, 128, 144, 0.15);
+	z-index: 0;
+}
+
 .navbar {
 	display: flex;
 	justify-content: space-between;
-	width: 55%;
+	width: 49%;
 	max-width: 600px;
 	height: 60px;
 }
 
 .navbar-item {
-	display: inline-block;
-	padding: 20px 0;
-
+	position: relative;
+	display: flex;
+	align-items: center;
 }
 
 .navbar-item.active{
-	border-bottom: 4px solid #26DCCE; 
+	
+	&:before{
+		content : "";
+		position: absolute;
+		left    : 0;
+		bottom  : 0;
+		height  : 1px;
+		margin-left: 10%;
+		width   : 80%;  /* or 100px */
+		border-bottom:4px solid #26DCCE;
+	}
+
+	a {
+		color: #000000;
+	}	
+
 }
 
 .logo {
+	position: relative;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
+	z-index: 2;
 	
-
 	img {
-		width: 40%;
-		margin-right: 11px;
+		width: 23%;
+		margin-right: 2.53%;
+	}
+
+	p {
+		color: #000000;
+		line-height: 1.2;
 	}
 }
 
@@ -44,7 +76,7 @@
 
 .page-container {
 	position: relative;
-	margin-top: 10%;
+	margin-top: 12%;
 }
 
 .page {
@@ -85,7 +117,7 @@
 }
 
 .recruit-desc-logo {
-	width: 47%;
+	width: 30%;
 }
 
 .recruit-desc-heading {
@@ -93,7 +125,7 @@
 }
 
 .recruit-desc-text {
-	margin-top: 40px
+	margin-top: 4.5vw;
 }
 
 .recruit-nav {
@@ -159,7 +191,7 @@
 .timeline-line {
 	height: 1px;
 	margin: 0 5%;
-	margin-top: 4.44375%;
+	margin-top: 3.94375%;
 	width: 90%;
 	position: absolute;
 	background: #C6CDD9;
@@ -168,7 +200,7 @@
 
 .schedule-timeline {
 	position: relative;
-	margin-top: 55px;
+	margin-top: 3.66vw;
 	display: flex;
 	justify-content: space-between;
 }
@@ -178,7 +210,7 @@
 	z-index: 2;
 
 	&:last-child {
-		width: 9%;
+		width: 7.38%;
 		text-align: center;
 
 		.timeline-icon-container {
@@ -188,7 +220,7 @@
 }
 
 .timeline-icon-container {
-	width: 59.25%;
+	width: 49.25%;
 	background: #FFF;
 }
 
@@ -200,7 +232,7 @@
 
 .timeline-item-desc {
 	position: relative;
-	margin-top: 50px;
+	margin-top: 3.66vw;
 }
 
 .timeline-item-heading-container {
@@ -210,7 +242,7 @@
 
 .timeline-item-list-container {
 	position: relative;
-	top: 100px;
+	top: 5.2vw;
 	margin-left: 15%;
 }
 
@@ -242,24 +274,35 @@
 /****PROCEDURE****/
 
 .procedure-desc-container {
-	margin-top: 50px;
+	margin-top: 3.66vw;
 }
 
 .procedure-item-button-container {
-	margin-top: 30px;
+
+	a:first-child {
+		.procedure-item-button {
+			margin-left: 0;
+		}
+	}
+
+	a:last-child {
+		.procedure-item-button {
+			margin-right: 0;
+		}
+	}
+	margin-top: 1.5vw;
 }
 
 .procedure-desc-item p{
-	margin-top: 30px;
+	margin-top: 0.512vw;
 }
 
 .procedure-item-heading {
 	display: inline-block;
-	margin-top: 17px;
 }
 
 .procedure-item-button {
-	margin: 1.075%;
+	margin: 2.15%;
 	width: 45.82%;
 	border-radius: 8px;
 	display:inline-block;
@@ -282,16 +325,16 @@
 }
 
 .challenges-item-list {
-	margin-top: 46px;
-	margin-left: 30px;
+	margin-top: 3.37vw;
+	margin-left: 2.19vw;
 	li {
-		margin-top: 20px;
+		margin-top: 1.10vw;
 
 	}
 }
 
 .challenges-gallery {
-	margin-top: 40px;
+	margin-top: 2.93vw;
 	display: flex;
 	justify-content: space-between;
 }
@@ -310,12 +353,16 @@
 	}
 }
 
+.whysds-text-container {
+	margin-top: 2.34vw;
+}
+
 .whysds-text {
-	margin-top: 32px;
+	margin-top: 1.17vw;
 }
 
 .whysds-gallery {
-	margin-top: 40px;
+	margin-top: 2.71vw;
 	display: flex;
 	justify-content: space-between;
 }
@@ -339,13 +386,12 @@
 	width: 4.39vw;
 	height: 100%;
 	button {
-		background: none;
+		background: transparent;
 		background-position: center;
 		background-repeat: no-repeat;
 
-		border: 1px solid #DFE5EF;
+		border: none;
 		border-radius: 0;
-
 		height: 8.78vw;
 		width: 100%;
 		
@@ -353,7 +399,7 @@
 	}
 	button:hover {
 		cursor: pointer;
-		box-shadow: 0px 0px 5px rgba(116, 128, 144, 0.15);
+		box-shadow: 0px 0px 15px rgba(116, 128, 144, 0.15);
 	}
 	button:focus {
 		outline: none;

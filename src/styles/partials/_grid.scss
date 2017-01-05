@@ -16,9 +16,17 @@
 
 [class*='col-'] {
   float: left;
-  padding: 0px 1vw;
+  padding: 0px 1.5vw;
   width: 100%;
   min-height: 1px;
+
+  &:first-child {
+    padding-left: 0px;
+  }
+
+  &:last-child {
+    padding-right: 0px;
+  }
 }
 
 @media #{$breakpoint-small} {
