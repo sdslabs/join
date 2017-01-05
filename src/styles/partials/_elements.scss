@@ -319,6 +319,7 @@
 	@include aspect-ratio(219, 157);
 	border-radius: 8px;
 	border: 1px solid black;
+  overflow: hidden;
 }
 
 /****LEFT AND RIGHT NAVIGATION BUTTONS****/
