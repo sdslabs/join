@@ -153,4 +153,6 @@ jQuery(document).ready(function($){
 	});
 
 	matchURL(document.location.pathname);
+
+  $('.fancybox').fancybox();
 });

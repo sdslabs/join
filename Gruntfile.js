@@ -15,7 +15,7 @@ module.exports = function(grunt){
 					cwd: '<%= join.src %>',
 					dest: '<%= join.dist %>',
 					src: [
-						'**/*.{js,html,ico,png,jpg,jpeg,gif,txt,svg,pdf}',
+						'**/*.{js,html,ico,png,jpg,jpeg,gif,txt,svg,pdf,css}',
 						'.htaccess'
 					]
 				}]
@@ -54,7 +54,7 @@ module.exports = function(grunt){
 					cwd: '<%= join.src %>',
 					dest: '<%= join.dist %>',
 					src: [
-						'**/*.{ico,svg,txt,pdf}',
+						'**/*.{ico,svg,txt,pdf,css}',
 						'.htaccess',
 					]
 				}]	
