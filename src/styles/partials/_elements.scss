@@ -7,7 +7,7 @@
 	justify-content: space-between;
 	align-items: center;
 	position: absolute;
-	height: 60px;
+	height: 4.39vw;
 }
 
 .nav-shadow {
@@ -15,7 +15,7 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-	height: 60px;
+	height: 4.39vw;
 	margin: 0;
 	box-shadow: 0px 3px 15px rgba(116, 128, 144, 0.15);
 	z-index: 0;
@@ -25,8 +25,7 @@
 	display: flex;
 	justify-content: space-between;
 	width: 49%;
-	max-width: 600px;
-	height: 60px;
+	height: 4.39vw;
 }
 
 .navbar-item {
@@ -200,13 +199,13 @@
 
 .schedule-timeline {
 	position: relative;
-	margin-top: 3.66vw;
+	margin-top: 3.6vw;
 	display: flex;
 	justify-content: space-between;
 }
 
 .schedule-timeline-item {
-	width: 15%;
+	width: 18%;
 	z-index: 2;
 
 	&:last-child {
@@ -242,7 +241,7 @@
 
 .timeline-item-list-container {
 	position: relative;
-	top: 5.2vw;
+	top: 3.9vw;
 	margin-left: 15%;
 }
 
@@ -273,6 +272,10 @@
 
 /****PROCEDURE****/
 
+#procedure {
+	height: 36vw;
+}
+
 .procedure-desc-container {
 	margin-top: 3.66vw;
 }
@@ -290,11 +293,11 @@
 			margin-right: 0;
 		}
 	}
-	margin-top: 1.5vw;
+	margin-top: 1.7vw;
 }
 
 .procedure-desc-item p{
-	margin-top: 0.512vw;
+	margin-top: 1.312vw;	
 }
 
 .procedure-item-heading {
@@ -302,14 +305,20 @@
 }
 
 .procedure-item-button {
-	margin: 2.15%;
+	margin-left: 2.15%;
+	margin-right: 2.15%;
 	width: 45.82%;
 	border-radius: 8px;
 	display:inline-block;
 }
 
 .procedure-footer {
-	margin-top: 84px;
+	position: absolute;
+	bottom: 0;
+	a {
+		font-size: 12px;
+		font-size: 0.8vw;
+	}	
 }
 
 .icon--problem {
