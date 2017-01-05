@@ -359,8 +359,9 @@
 
 .challenges-gallery-item {
 	@include aspect-ratio(140, 196);
-	border-radius: 8px;
+	border-radius: 4px;
 	border: 1px solid #E8E8E8;
+	overflow: hidden;
 
 	&:hover {
 		box-shadow: 0px 20px 30px rgba(116, 128, 144, 0.15);
@@ -378,14 +379,15 @@
 .whysds-gallery {
 	margin-top: 2.71vw;
 	display: flex;
-	justify-content: space-between;
 }
 
 .whysds-gallery-item-container {
+	margin-right: 2%;
 	width: 21.4%;
 }
 
 .whysds-gallery-item {
+	border-radius: 4px;
 	@include aspect-ratio(219, 157);
   	overflow: hidden;
 }
