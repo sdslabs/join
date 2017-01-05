@@ -160,7 +160,7 @@
 	height: 1px;
 	margin: 0 5%;
 	margin-top: 4.44375%;
-	width: 85%;
+	width: 90%;
 	position: absolute;
 	background: #C6CDD9;
 	z-index: 1;
@@ -176,6 +176,15 @@
 .schedule-timeline-item {
 	width: 15%;
 	z-index: 2;
+
+	&:last-child {
+		width: 9%;
+		text-align: center;
+
+		.timeline-icon-container {
+			width: 100%;
+		}
+	}
 }
 
 .timeline-icon-container {
@@ -202,7 +211,7 @@
 .timeline-item-list-container {
 	position: relative;
 	top: 100px;
-	margin-left: 22px;
+	margin-left: 15%;
 }
 
 .icon--interviews {
@@ -318,8 +327,7 @@
 .whysds-gallery-item {
 	@include aspect-ratio(219, 157);
 	border-radius: 8px;
-	border: 1px solid black;
-  overflow: hidden;
+  	overflow: hidden;
 }
 
 /****LEFT AND RIGHT NAVIGATION BUTTONS****/
