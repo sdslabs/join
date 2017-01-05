@@ -231,7 +231,7 @@
 
 .timeline-item-desc {
 	position: relative;
-	margin-top: 3.66vw;
+	margin-top: 2.4vw;
 }
 
 .timeline-item-heading-container {
@@ -273,11 +273,11 @@
 /****PROCEDURE****/
 
 #procedure {
-	height: 36vw;
+	height: 33vw;
 }
 
 .procedure-desc-container {
-	margin-top: 3.66vw;
+	margin-top: 2.4vw;
 }
 
 .procedure-item-button-container {
@@ -297,6 +297,11 @@
 }
 
 .procedure-desc-item p{
+
+	&:first-of-type {
+		margin-top: 0.5vw;
+	}
+
 	margin-top: 1.312vw;	
 }
 
@@ -382,7 +387,6 @@
 
 .whysds-gallery-item {
 	@include aspect-ratio(219, 157);
-	border-radius: 8px;
   	overflow: hidden;
 }
 
