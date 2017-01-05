@@ -107,9 +107,11 @@ jQuery(document).ready(function($){
 
 		if (slide === 0) {
 			navLeftButton.hide();
+			navRightButton.show();
 		}
 		else if (slide === Object.keys(pageUrls).length-1) {
 			navRightButton.hide();
+			navLeftButton.show();
 		}
 		else {
 			navLeftButton.show();
