@@ -30,6 +30,8 @@ jQuery(document).ready(function($){
 	var links = pageNavbar.find('.navbar-item-link');
 	var homePageLinks = homeLinkContainer.find('.recruit-nav-list-item-link');
 
+	var fancyboxOn = false;
+
     function matchURL(url) {
         for (var index in routes)
         {
@@ -139,6 +141,8 @@ jQuery(document).ready(function($){
 	navRightButton.on('click', sideNavClick.right);
 
 	$('body').keydown(function (e) {
+		if (fancyboxOn) return;
+
 		var keyCode = e.keyCode || e.which,
 		  arrow = {left: 37, up: 38, right: 39, down: 40 };
 
@@ -156,5 +160,12 @@ jQuery(document).ready(function($){
 
 	matchURL(document.location.pathname);
 
-  $('.fancybox').fancybox();
+	$('.fancybox').fancybox({
+		beforeLoad: function() {
+			fancyboxOn = true;
+		},
+		afterClose: function() {
+			fancyboxOn = false;
+		}
+	});
 });
