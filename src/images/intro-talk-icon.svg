@@ -1,32 +1,32 @@
 <svg width="40" height="40" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
 <title>intro talk</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(-1118 235)" figma:type="canvas">
-<g id="intro talk" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Canvas" transform="translate(-1118 673)" figma:type="canvas">
+<g id="intro talk" style="mix-blend-mode:normal;" opacity="0.4" figma:type="frame">
 <g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path0_fill" transform="translate(1118 -235)" fill="#5D5CA9" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path0_fill" transform="translate(1118 -673)" fill="#5D5CA9" style="mix-blend-mode:normal;"/>
 </g>
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path1_fill" transform="translate(1120.52 -232.478)" fill="#56C3C0" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_fill" transform="translate(1120.52 -670.478)" fill="#56C3C0" style="mix-blend-mode:normal;"/>
 </g>
 <g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path2_fill" transform="translate(1129.83 -229.174)" fill="#5D5CA9" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path2_fill" transform="translate(1129.83 -667.174)" fill="#5D5CA9" style="mix-blend-mode:normal;"/>
 </g>
 </g>
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path3_fill" transform="translate(1138 -217.957)" fill="#54548E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path3_fill" transform="translate(1138 -655.957)" fill="#54548E" style="mix-blend-mode:normal;"/>
 </g>
 </g>
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path4_fill" transform="translate(1120.52 -214.304)" fill="#5D5CA9" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path4_fill" transform="translate(1120.52 -652.304)" fill="#5D5CA9" style="mix-blend-mode:normal;"/>
 </g>
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path5_fill" transform="translate(1136.05 -218.315)" fill="#5D5CA9" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path5_fill" transform="translate(1136.05 -656.315)" fill="#5D5CA9" style="mix-blend-mode:normal;"/>
 </g>
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path6_fill" transform="translate(1138 -219.171)" fill="#332B7F" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path6_fill" transform="translate(1138 -657.171)" fill="#332B7F" style="mix-blend-mode:normal;"/>
 </g>
 </g>
 </g>

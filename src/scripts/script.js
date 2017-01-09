@@ -7,6 +7,7 @@ jQuery(document).ready(function($){
         "/procedure": "procedure",
         "/challenges": "challenges",
         "/whysds": "whysds",
+        "/results": "results",
         "/": "root"
   	};
 
@@ -15,7 +16,8 @@ jQuery(document).ready(function($){
   		1 : "/schedule",
   		2 : "/procedure",
   		3 : "/challenges",
-  		4 : "/whysds"
+  		4 : "/whysds",
+  		5 : "/results"
   	};
 
   	var navLeftButton = $('#nav-left-button');
@@ -42,8 +44,6 @@ jQuery(document).ready(function($){
                 }
             	for(var key in pageUrls) {
 				    if(pageUrls[key] === index) {
-			    		console.log("prevSlide : "+ slide);
-			    		console.log("nextSlide : "+ key);
 			    		updateSlide(parseInt(slide), parseInt(key));
 				    }
 				}

@@ -124,11 +124,11 @@
 }
 
 .recruit-desc-text {
-	margin-top: 4.5vw;
+	margin-top: 2.5vw;
 }
 
 .recruit-nav {
-	margin-left: 8.33%;
+	margin-left: 8.32%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -137,8 +137,23 @@
 
 .recruit-nav-list-item-container {
 	text-align: center;
-	margin: 2%;
-	width: 46%;
+	margin: 1.78%;
+}
+
+.sm-box {
+	width: 29.77%;
+
+	.recruit-nav-list-item-link {
+		@include aspect-ratio(140, 166);
+	}
+
+}
+
+.xl-box {
+	width: 46.44%;
+	.recruit-nav-list-item-link {
+		@include aspect-ratio(300, 226);
+	}
 }
 
 .recruit-nav-list-item-link {
@@ -184,6 +199,11 @@
 .icon--whysds {
   @include dump-bg-image-styles($image-path-whysds);
 }
+
+.icon--xresults {
+  @include dump-bg-image-styles($image-path-results-large);
+}
+
 
 /****SCHEDULE****/
 
@@ -370,6 +390,8 @@
 
 .whysds-text-container {
 	margin-top: 2.34vw;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 .whysds-text {
@@ -379,6 +401,7 @@
 .whysds-gallery {
 	margin-top: 2.71vw;
 	display: flex;
+	justify-content: center;
 }
 
 .whysds-gallery-item-container {
@@ -391,6 +414,27 @@
 	@include aspect-ratio(219, 157);
   	overflow: hidden;
 }
+
+
+/****RESULTS****/
+
+
+.results-container {
+	display: flex;
+	margin-top: 2.4vw;
+}
+
+.results-item {
+	width: 25%;
+}
+
+.results-item-list {
+	margin-left: 7%;
+	list-style-type: decimal;
+}
+
+
+
 
 /****LEFT AND RIGHT NAVIGATION BUTTONS****/
 .nav-side {
