@@ -422,17 +422,34 @@
 .results-container {
 	display: flex;
 	margin-top: 2.4vw;
+	justify-content: space-between;
 }
 
 .results-item {
-	width: 25%;
+	width: 18%;	
 }
 
+
+.woc {
+	width: 32%;
+}
+
+.woc-list-container{
+	display:flex;
+	justify-content: space-between;
+}
+
+
 .results-item-list {
-	margin-left: 7%;
+	margin-top: 1.8vw;
+	padding-left: 7%;
 	list-style-type: decimal;
 }
 
+.woc-list {
+	width: 47%;
+	padding-left: 5%;
+}
 
 
 
