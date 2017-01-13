@@ -290,6 +290,11 @@
   background-size: 60%;
 }
 
+.icon--recruitment-blur {
+  @include dump-bg-image-styles($image-path-recruitment-blur);
+  background-size: 60%;
+}
+
 /****PROCEDURE****/
 
 #procedure {
