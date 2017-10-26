@@ -1,0 +1,43 @@
+<svg width="55" height="65" viewBox="0 0 55 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-342 339)" figma:type="canvas">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(360.153 -323.875)" fill="#56C3C0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="matrix(0.7778 0.6285 -0.6285 0.7778 388.497 -333.284)" fill="#56C3C0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="matrix(-0.7636 0.6457 -0.6457 -0.7636 396.522 -326.412)" fill="#56C3C0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(360.265 -299.451)" fill="#56C3C0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path3_stroke" transform="translate(344.986 -336.7)" fill="#332B7F" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_stroke" transform="translate(344.986 -312.611)" fill="#4F528E" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path5_stroke" transform="translate(344.986 -288.522)" fill="#4F528E" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path6_fill" transform="translate(379.447 -333.243)" fill="#56C3C0" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 1.67286 0L 0 0L 0 9.03346L 1.67286 9.03346L 1.67286 0Z"/>
+<path id="path1_fill" d="M 1.67286 0L 0 0L 0 9.03346L 1.67286 9.03346L 1.67286 0Z"/>
+<path id="path2_fill" d="M 1.67286 0L 0 0L 0 9.03346L 1.67286 9.03346L 1.67286 0Z"/>
+<path id="path3_stroke" d="M 0 0L 0 -2L -2 -2L -2 0L 0 0ZM 32.342 0L 34.342 0L 34.342 -2L 32.342 -2L 32.342 0ZM 32.342 11.8216L 32.342 13.8216L 34.342 13.8216L 34.342 11.8216L 32.342 11.8216ZM 0 11.8216L -2 11.8216L -2 13.8216L 0 13.8216L 0 11.8216ZM 0 2L 32.342 2L 32.342 -2L 0 -2L 0 2ZM 30.342 0L 30.342 11.8216L 34.342 11.8216L 34.342 0L 30.342 0ZM 32.342 9.82156L 0 9.82156L 0 13.8216L 32.342 13.8216L 32.342 9.82156ZM 2 11.8216L 2 0L -2 0L -2 11.8216L 2 11.8216Z"/>
+<path id="path4_stroke" d="M 0 4.25431e-07L 0 -2L -2 -2L -2 4.25431e-07L 0 4.25431e-07ZM 32.342 4.25431e-07L 34.342 4.25431e-07L 34.342 -2L 32.342 -2L 32.342 4.25431e-07ZM 32.342 11.8216L 32.342 13.8216L 34.342 13.8216L 34.342 11.8216L 32.342 11.8216ZM 0 11.8216L -2 11.8216L -2 13.8216L 0 13.8216L 0 11.8216ZM 0 2L 32.342 2L 32.342 -2L 0 -2L 0 2ZM 30.342 4.25431e-07L 30.342 11.8216L 34.342 11.8216L 34.342 4.25431e-07L 30.342 4.25431e-07ZM 32.342 9.82156L 0 9.82156L 0 13.8216L 32.342 13.8216L 32.342 9.82156ZM 2 11.8216L 2 4.25431e-07L -2 4.25431e-07L -2 11.8216L 2 11.8216Z"/>
+<path id="path5_stroke" d="M 0 8.50862e-07L 0 -2L -2 -2L -2 8.50862e-07L 0 8.50862e-07ZM 32.342 8.50862e-07L 34.342 8.50862e-07L 34.342 -2L 32.342 -2L 32.342 8.50862e-07ZM 32.342 11.8216L 32.342 13.8216L 34.342 13.8216L 34.342 11.8216L 32.342 11.8216ZM 0 11.8216L -2 11.8216L -2 13.8216L 0 13.8216L 0 11.8216ZM 0 2L 32.342 2L 32.342 -2L 0 -2L 0 2ZM 30.342 8.50862e-07L 30.342 11.8216L 34.342 11.8216L 34.342 8.50862e-07L 30.342 8.50862e-07ZM 32.342 9.82156L 0 9.82156L 0 13.8216L 32.342 13.8216L 32.342 9.82156ZM 2 11.8216L 2 8.50862e-07L -2 8.50862e-07L -2 11.8216L 2 11.8216Z"/>
+<path id="path6_fill" d="M 9.03346 -1.06358e-07L 9.03346 51.5242L 1.70172e-06 51.5242L 1.70172e-06 53.7546L 9.03346 53.7546L 11.2639 53.7546L 11.2639 51.5242L 11.2639 -1.06358e-07L 9.03346 -1.06358e-07Z"/>
+</defs>
+</svg>
