@@ -220,6 +220,13 @@ module.exports = function(grunt){
       				livereload: '<%= connect.options.livereload %>',
     			}
 			}
+		},
+
+		'gh-pages': {
+		      options: {
+		        base: 'dist'
+		        },
+		      src: ['**']
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-sass');
@@ -231,6 +238,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-gh-pages');
 	grunt.registerTask('default',[ "clean:dist", "sass", "copy:dev", "connect:livereload", "watch" ]);
 	grunt.registerTask('build', [ "clean:dist", "sass", "cssmin", "uglify", "imagemin", "htmlmin", "copy:prod" ]);
 }
