@@ -290,8 +290,8 @@
   background-size: 60%;
 }
 
-.icon--recruitment-blur {
-  @include dump-bg-image-styles($image-path-recruitment-blur);
+.icon--recruitment-faded {
+  @include dump-bg-image-styles($image-path-recruitment-faded);
   background-size: 60%;
 }
 
