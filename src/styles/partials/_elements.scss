@@ -291,7 +291,7 @@
 }
 
 .icon--competitions {
-  @include dump-bg-image-styles($image-path-competitions);
+  @include dump-bg-image-styles($image-path-competitions-faded);
   background-size: 60%;
 }
 
