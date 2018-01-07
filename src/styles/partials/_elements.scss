@@ -265,6 +265,16 @@
 	margin-left: 15%;
 }
 
+.timeline-image {
+	margin: -17% 0 0 13%;
+}
+
+@media only screen and (min-width: 1800px) {
+	.timeline-image {
+		margin: -5% 0 0 35%;
+	}
+}
+
 .icon--interviews {
   @include dump-bg-image-styles($image-path-interviews);
   background-size: 60%;
@@ -344,7 +354,7 @@
 
 .procedure-footer {
 	position: absolute;
-	bottom: 0;
+	bottom: -2vw;
 	a {
 		font-size: 12px;
 		font-size: 0.8vw;
@@ -406,11 +416,10 @@
 .whysds-gallery {
 	margin-top: 2.71vw;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .whysds-gallery-item-container {
-	margin-right: 2%;
 	width: 21.4%;
 }
 
