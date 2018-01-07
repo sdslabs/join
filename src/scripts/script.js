@@ -20,6 +20,13 @@ jQuery(document).ready(function($){
   		5 : "/results"
   	};
 
+  	var timelines = {
+  		0 : "1515357000", // Competitions (8th Jan'18, 2:00 AM)
+  		1 : "1515508200", // Intro Talk  (9th Jan'18, 8:00 PM)
+  		2 : "1515681000", // Recruitment Test (11th Jan'18, 8:00 PM)
+  		3 : "1515954540", // Interviews  (14th Jan'18, 11:59 PM)
+   	};
+
   	var navLeftButton = $('#nav-left-button');
   	var navRightButton = $('#nav-right-button');
 
@@ -27,6 +34,8 @@ jQuery(document).ready(function($){
   	var pageNavbar = $('.page-nav');
 	var homeLinkContainer = $('.recruit-nav');	
 	var pageContainer = $('.page-container');
+	var scheduleTimelineItem = $('.schedule-timeline-item');
+	var timelineListItem = $('.timeline-list-item');
 
 	var pages = pageContainer.children('.page');
 	var links = pageNavbar.find('.navbar-item-link');
@@ -167,5 +176,16 @@ jQuery(document).ready(function($){
 		afterClose: function() {
 			fancyboxOn = false;
 		}
+	});
+
+	// Automated Schedule
+	Object.values(timelines).find(function (ts) {
+	  if (parseInt(ts) <= parseInt(Date.now()/1000)) {
+	  	currTimeline = Object.keys(timelines).find(key => timelines[key] === ts);
+		for ( var i=0; i<+currTimeline+1; i++) {
+	  		scheduleTimelineItem.eq(i).addClass('fade');
+	  		scheduleTimelineItem.eq(i).find('li').wrap('<strike>');
+	  	}
+	  }
 	});
 });
