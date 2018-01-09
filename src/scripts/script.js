@@ -182,7 +182,6 @@ jQuery(document).ready(function($){
 	Object.values(timelines).find(function (ts) {
 	  if (parseInt(ts) <= parseInt(Date.now()/1000)) {
 	  	currTimeline = Object.keys(timelines)[Object.values(timelines).indexOf(ts)];
-	  	console.log(currTimeline);
 		for ( var i=0; i<+currTimeline+1; i++) {
 	  		scheduleTimelineItem.eq(i).addClass('fade');
 	  		scheduleTimelineItem.eq(i).find('li').wrap('<strike>');
