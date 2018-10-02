@@ -1,4 +1,5 @@
 # SDSLabs Recruitment Page 2017
+This website is used as a registration portal during the recruitment days for the SDSLabs.
 
 ## Prerequisites
 
