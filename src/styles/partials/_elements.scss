@@ -308,31 +308,31 @@
 
 /****PROCEDURE****/
 
-#procedure {
+#procedure, #makers {
 	height: 33vw;
 }
 
-.procedure-desc-container {
+.procedure-desc-container, .makers-desc-container {
 	margin-top: 2.4vw;
 }
 
-.procedure-item-button-container {
+.procedure-item-button-container, .makers-item-button-container {
 
 	a:first-child {
-		.procedure-item-button {
+		.procedure-item-button, .makers-item-button {
 			margin-left: 0;
 		}
 	}
 
 	a:last-child {
-		.procedure-item-button {
+		.procedure-item-button, .makers-item-button {
 			margin-right: 0;
 		}
 	}
 	margin-top: 1.7vw;
 }
 
-.procedure-desc-item p{
+.procedure-desc-item p, .makers-desc-item p{
 
 	&:first-of-type {
 		margin-top: 0.5vw;
@@ -341,11 +341,11 @@
 	margin-top: 1.312vw;	
 }
 
-.procedure-item-heading {
+.procedure-item-heading , .makers-item-heading{
 	display: inline-block;
 }
 
-.procedure-item-button {
+.procedure-item-button, .makers-item-button {
 	margin-left: 2.15%;
 	margin-right: 2.15%;
 	width: 45.82%;
@@ -353,7 +353,7 @@
 	display:inline-block;
 }
 
-.procedure-footer {
+.procedure-footer, .makers-footer{
 	position: absolute;
 	bottom: -3vw;
 	a {
@@ -459,6 +459,16 @@
 	margin-top: 1.8vw;
 	padding-left: 7%;
 	list-style-type: decimal;
+}
+
+.makers-rule-list {
+	padding-left: 2.8%;
+	list-style-type: decimal;
+
+	li { 
+		font-size: 1.1vw;
+		padding: 0.4vh 0
+	}
 }
 
 .woc-list {

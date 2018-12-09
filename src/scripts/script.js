@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
         "/procedure": "procedure",
         "/challenges": "challenges",
         "/whysds": "whysds",
-        "/results": "results",
+        // "/results": "results",
         "/": "root"
   	};
 
@@ -17,14 +17,14 @@ jQuery(document).ready(function($){
   		2 : "/procedure",
   		3 : "/challenges",
   		4 : "/whysds",
-  		5 : "/results"
+  		// 5 : "/results"
   	};
 
   	var timelines = {
-  		0 : "1515357000", // Competitions (8th Jan'18, 2:00 AM)
-  		1 : "1515508200", // Intro Talk  (9th Jan'18, 8:00 PM)
-  		2 : "1515681000", // Recruitment Test (11th Jan'18, 8:00 PM)
-  		3 : "1515954540", // Interviews  (14th Jan'18, 11:59 PM)
+  		0 : "1546957800", // Competitions (8th Jan'19, 2:00 AM)
+  		1 : "1547044200", // Intro Talk  (9th Jan'19, 8:00 PM)
+  		2 : "1547217000", // Recruitment Test (11th Jan'19, 8:00 PM)
+  		3 : "1547490599", // Interviews  (14th Jan'19, 11:59 PM)
    	};
 
   	var navLeftButton = $('#nav-left-button');
