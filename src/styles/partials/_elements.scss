@@ -24,7 +24,7 @@
 .navbar {
 	display: flex;
 	justify-content: space-between;
-	width: 49%;
+	width: 100%;
 	height: 4.39vw;
 }
 
@@ -266,6 +266,7 @@
 }
 
 .timeline-image {
+	height: 70%;
 	margin: -17% 0 0 13%;
 }
 
@@ -457,8 +458,7 @@
 
 .results-item-list {
 	margin-top: 1.8vw;
-	padding-left: 7%;
-	list-style-type: decimal;
+	list-style: decimal inside;
 }
 
 .makers-rule-list {
