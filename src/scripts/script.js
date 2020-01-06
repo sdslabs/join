@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
         "/challenges": "challenges",
         "/competitions": "competitions",
         "/whysds": "whysds",
-        "/results": "results",
+        // "/results": "results",
         "/": "root"
   	};
 
@@ -19,14 +19,14 @@ jQuery(document).ready(function($){
   		3 : "/challenges",
   		4: "/competitions",
   		5: "/whysds",
-  		6 : "/results"
+  		// 6 : "/results"
   	};
 
   	var timelines = {
-  		0 : "1547404200", // Competitions (14th Jan'19, 00:00)
-  		1 : "1547577000", // Intro Talk  (16th Jan'19, 00:00)
-  		2 : "1547739000", // Recruitment Test (17th Jan'19, 21:00)
-  		3 : "1548008999", // Interviews  (20th Jan'19, 23:59:59)
+  		0 : "1578940200", // Competitions (14th Jan'20, 00:00)
+  		1 : "1579113000", // Intro Talk  (16th Jan'20, 00:00)
+  		2 : "1579199400", // Recruitment Test (17th Jan'20, 00:00)
+  		3 : "1579458600", // Interviews  (20th Jan'20, 23:59:59)
    	};
 
   	var navLeftButton = $('#nav-left-button');
