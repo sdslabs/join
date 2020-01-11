@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
         "/challenges": "challenges",
         "/competitions": "competitions",
         "/whysds": "whysds",
-        // "/results": "results",
+        "/results": "results",
         "/": "root"
   	};
 
@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
   		3 : "/challenges",
   		4: "/competitions",
   		5: "/whysds",
-  		// 6 : "/results"
+  		6 : "/results"
   	};
 
   	var timelines = {
