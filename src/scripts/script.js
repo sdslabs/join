@@ -23,10 +23,10 @@ jQuery(document).ready(function($){
   	};
 
   	var timelines = {
-  		0 : "1578940200", // Competitions (14th Jan'20, 00:00)
-  		1 : "1579113000", // Intro Talk  (16th Jan'20, 00:00)
-  		2 : "1579199400", // Recruitment Test (17th Jan'20, 00:00)
-  		3 : "1579458600", // Interviews  (20th Jan'20, 23:59:59)
+  		0 : "1638709200", // Intro Talk  (5th Dec'21, 18:30)
+  		1 : "1742440338", // Competitions (14th Jan'20, 00:00)
+  		2 : "1742440338", // Recruitment Test (17th Jan'20, 00:00)
+  		3 : "1742440338", // Interviews  (20th Jan'20, 23:59:59)
    	};
 
   	var navLeftButton = $('#nav-left-button');
@@ -184,6 +184,7 @@ jQuery(document).ready(function($){
 	Object.values(timelines).find(function (ts) {
 	  if (parseInt(ts) <= parseInt(Date.now()/1000)) {
 	  	currTimeline = Object.keys(timelines)[Object.values(timelines).indexOf(ts)];
+		console.log(parseInt(Date.now()/1000));
 		for ( var i=0; i<+currTimeline+1; i++) {
 	  		scheduleTimelineItem.eq(i).addClass('fade');
 	  		scheduleTimelineItem.eq(i).find('li').wrap('<strike>');
