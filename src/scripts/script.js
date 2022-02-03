@@ -64,6 +64,11 @@ jQuery(document).ready(function($){
         }
     }
 
+	window.onload = function(event){
+		console.log(document.location.pathname);
+		//matchURL(Document.location.pathname);
+	};
+
 	links.on('click', function(event) {
 		event.preventDefault();
 		var nextId = parseInt($(this)[0].attributes.data_target.value);
