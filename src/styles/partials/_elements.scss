@@ -732,7 +732,7 @@
 	  .navbar .menu-items {
 		padding-top: 30vw;
 		background: #fff;
-		height: 100vh;
+		height: 1000vh;
 		max-width: 70vw;
 		transform: translate(-150%);
 		display: flex;
@@ -804,6 +804,7 @@
 		  width: 100%;
 
 		  img {
+			margin-top: 10vw;
 			display: block;
 			margin-left: auto;
 			margin-right: auto;

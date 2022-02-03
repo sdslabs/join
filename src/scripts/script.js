@@ -46,16 +46,27 @@ jQuery(document).ready(function($){
 
 	var fancyboxOn = false;
 
+	const cb = document.querySelector('#nav-toggle');
+
     function matchURL(url) {
+
+		if(cb.checked) {
+			cb.checked = false;
+		}
+
         for (var index in routes)
         {
+			console.log("hell " + index + " " + url);
             if(url == index)
             {
+				console.log("url " + url);
             	if(url != document.location.pathname) {
                     window.history.pushState(null, null, url);
                 }
             	for(var key in pageUrls) {
+					console.log("testing " + key);
 				    if(pageUrls[key] === index) {
+						console.log("slide " + slide + " key " + key + " pageUrls " + pageUrls[key] + " index " + index);
 			    		updateSlide(parseInt(slide), parseInt(key));
 				    }
 				}
@@ -63,11 +74,6 @@ jQuery(document).ready(function($){
             }
         }
     }
-
-	window.onload = function(event){
-		console.log(document.location.pathname);
-		//matchURL(Document.location.pathname);
-	};
 
 	links.on('click', function(event) {
 		event.preventDefault();
@@ -201,4 +207,12 @@ jQuery(document).ready(function($){
 	  	}
 	  }
 	});
+
+	document.getElementById("nav-schedule").onclick = function() {matchURL(pageUrls[1])};
+	document.getElementById("nav-procedure").onclick = function() {matchURL(pageUrls[2])};
+	document.getElementById("nav-challenges").onclick = function() {matchURL(pageUrls[3])};
+	document.getElementById("nav-competitions").onclick = function() {matchURL(pageUrls[4])};
+	document.getElementById("nav-whysds").onclick = function() {matchURL(pageUrls[5])};
+	document.getElementById("nav-result").onclick = function() {matchURL(pageUrls[6])};
+
 });
