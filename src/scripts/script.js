@@ -25,7 +25,7 @@ jQuery(document).ready(function($){
   	var timelines = {
   		0 : "1638709200", // Intro Talk  (5th Dec'21, 18:30)
   		1 : "1742440338", // Competitions (14th Jan'20, 00:00)
-  		2 : "1742440338", // Recruitment Test (17th Jan'20, 00:00)
+  		2 : "1648056600", // Recruitment Test (17th Jan'20, 00:00)
   		3 : "1742440338", // Interviews  (20th Jan'20, 23:59:59)
    	};
 
