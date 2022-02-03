@@ -598,6 +598,7 @@
 		float: left;
 		width: 100%;
 		min-height: 1px;
+		padding-left: 0%;
 	}
 
 	.icon-container {
@@ -612,6 +613,10 @@
 		position: absolute;
 		bottom: 10%;
 		font-size: 3vw;
+	}
+
+	.recruit-nav-list-item-container {
+		margin: 1.78% 0% 1.78% 0;
 	}
 
 	.recruit-desc-logo {
