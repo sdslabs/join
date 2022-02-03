@@ -4,7 +4,7 @@
 	width: 75%;
   overflow-x: hidden;
   overflow-y: hidden;
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 
 .container:after,
@@ -48,4 +48,10 @@
         width: 100% / 12 * $i;
     }
 	}
+}
+
+@media only screen and (max-width: 600px) {
+  .container-padding {
+    padding-top: 10vw;
+  }
 }

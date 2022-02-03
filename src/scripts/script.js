@@ -32,6 +32,7 @@ jQuery(document).ready(function($){
   	var navLeftButton = $('#nav-left-button');
   	var navRightButton = $('#nav-right-button');
 
+	var container = $('.container');
   	var navbar = $('.navbar');
   	var pageNavbar = $('.page-nav');
 	var homeLinkContainer = $('.recruit-nav');	
@@ -101,9 +102,13 @@ jQuery(document).ready(function($){
 			
 		if(nextSlideIndex != 0) {
 			$(pageNavbar).removeClass('hidden');
+			$(navbar).removeClass('hidden');
+			$(container).addClass('container-padding');
 		}
 		else {
 			$(pageNavbar).addClass('hidden');
+			$(navbar).addClass('hidden');
+			$(container).removeClass('container-padding');
 		}
 
 		if (nextSlideIndex > 0) {
