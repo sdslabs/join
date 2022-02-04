@@ -37,14 +37,14 @@ hr {
 	text-decoration: line-through;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
 	.desktop-site {
-		display: none;
+		display: none !important;
 	}
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 1024px) {
 	.mobile-site{
-		display: none;
+		display: none !important;
 	}
 }

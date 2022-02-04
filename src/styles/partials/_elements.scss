@@ -25,9 +25,9 @@
 
 .navbar-desktop {
 	display: flex;
-	justify-content: space-between;
+	justify-content: end;
 	width: 100%;
-	height: 3.5vw;
+	height: 3.5rem;
 }
 
 .navbar-item {
@@ -35,8 +35,12 @@
 	display: flex;
 	align-items: center;
 	white-space: nowrap;
+	margin-left: 1rem;
 }
 
+.navbar-item-link{
+	font-size: 1rem;
+}
 .navbar-item.active{
 	
 	&:before{
@@ -56,7 +60,12 @@
 	}	
 
 }
-
+.navbar-logo-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+}
 .navbar-logo {
 	position: relative;
 	float: left;
@@ -77,8 +86,8 @@
     line-height: 1.4;
     color: #000000;
     text-decoration: none;
-	margin-right: 200px;
-	margin-top: 7px;
+	margin-right: 3rem;
+	width: fit-content;
 }
 
 
@@ -535,7 +544,8 @@
 	top: 0;
 	display: flex;
 	align-items: center;
-	width: 4.39vw;
+	width: 8vw;
+	min-width: 3rem;
 	height: 100%;
 	button {
 		background: transparent;
@@ -584,7 +594,7 @@
 	width: 50%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
 	.recruit-nav {
 		margin-left: 0%;
 		display: flex;
