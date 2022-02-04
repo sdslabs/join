@@ -46,27 +46,26 @@ jQuery(document).ready(function($){
 
 	var fancyboxOn = false;
 
-	const cb = document.querySelector('#nav-toggle');
+	const checkbox = document.querySelector('#nav-toggle');
+	const navIcon = document.getElementById('nav-icon');
 
     function matchURL(url) {
 
-		if(cb.checked) {
-			cb.checked = false;
+		if(checkbox.checked) {
+			checkbox.checked = false;
+			navIcon.classList.toggle('opened');
+			navIcon.setAttribute('aria-expanded', navIcon.classList.contains('opened'));
 		}
 
         for (var index in routes)
         {
-			console.log("hell " + index + " " + url);
             if(url == index)
             {
-				console.log("url " + url);
             	if(url != document.location.pathname) {
                     window.history.pushState(null, null, url);
                 }
             	for(var key in pageUrls) {
-					console.log("testing " + key);
 				    if(pageUrls[key] === index) {
-						console.log("slide " + slide + " key " + key + " pageUrls " + pageUrls[key] + " index " + index);
 			    		updateSlide(parseInt(slide), parseInt(key));
 				    }
 				}
@@ -200,7 +199,6 @@ jQuery(document).ready(function($){
 	Object.values(timelines).find(function (ts) {
 	  if (parseInt(ts) <= parseInt(Date.now()/1000)) {
 	  	currTimeline = Object.keys(timelines)[Object.values(timelines).indexOf(ts)];
-		console.log(parseInt(Date.now()/1000));
 		for ( var i=0; i<+currTimeline+1; i++) {
 	  		scheduleTimelineItem.eq(i).addClass('fade');
 	  		scheduleTimelineItem.eq(i).find('li').wrap('<strike>');
@@ -215,4 +213,8 @@ jQuery(document).ready(function($){
 	document.getElementById("nav-whysds").onclick = function() {matchURL(pageUrls[5])};
 	document.getElementById("nav-result").onclick = function() {matchURL(pageUrls[6])};
 
+	checkbox.onclick = function () {
+		navIcon.classList.toggle('opened');
+		navIcon.setAttribute('aria-expanded', navIcon.classList.contains('opened'));
+	};
 });

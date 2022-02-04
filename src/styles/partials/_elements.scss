@@ -649,6 +649,7 @@
 	}
 
 	.menu-items {
+		z-index: 1;
 		order: 2;
 		display: flex;
 
@@ -714,7 +715,7 @@
 		height: 4px;
 		width: 100%;
 		border-radius: 10px;
-		background: #333;
+		background: #333333;
 	  }
 	
 	  .navbar-container .hamburger-lines .line1 {
@@ -741,7 +742,7 @@
 		flex-direction: column;
 		margin-left: -40px;
 		padding-left: 50px;
-		margin-top: -10vw;
+		margin-top: -15vw;
 		transition: transform 0.5s ease-in-out;
 		box-shadow: 0px 0px 15px rgba(116, 128, 144, 0.15);
 	  }
@@ -927,4 +928,54 @@
 		font-size: 2.5vw;
 		white-space: nowrap;
 	}
+
+	#nav-toggle {
+		z-index: 3;
+	}
+
+	.menu {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		display: flex;
+		padding: 0;
+		
+		svg {
+			z-index: 2;
+		}
+	  }
+	  .line {
+		fill: none;
+		stroke: black;
+		stroke-width: 6;
+		transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+		  stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+	  }
+	  .line1 {
+		stroke-dasharray: 60 207;
+		stroke-width: 6;
+	  }
+	  .line2 {
+		stroke-dasharray: 60 60;
+		stroke-width: 6;
+	  }
+	  .line3 {
+		stroke-dasharray: 60 207;
+		stroke-width: 6;
+	  }
+	  .opened .line1 {
+		stroke-dasharray: 90 207;
+		stroke-dashoffset: -134;
+		stroke-width: 6;
+	  }
+	  .opened .line2 {
+		stroke-dasharray: 1 60;
+		stroke-dashoffset: -30;
+		stroke-width: 6;
+	  }
+	  .opened .line3 {
+		stroke-dasharray: 90 207;
+		stroke-dashoffset: -134;
+		stroke-width: 6;
+	  }
 }
