@@ -202,6 +202,7 @@ jQuery(document).ready(function($){
 		for ( var i=0; i<+currTimeline+1; i++) {
 	  		scheduleTimelineItem.eq(i).addClass('fade');
 	  		scheduleTimelineItem.eq(i).find('li').wrap('<strike>');
+			scheduleTimelineItem.eq(i).find('ul').wrap('<strike>');
 	  	}
 	  }
 	});
