@@ -71,7 +71,7 @@
 	text-align: left;
 	white-space: nowrap;
 	font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     line-height: 1.4;
     color: #000000;
     text-decoration: none;
@@ -390,8 +390,7 @@
 	position: absolute;
 	bottom: -3vw;
 	a {
-		font-size: 12px;
-		font-size: 0.8vw;
+		font-size: 0.75rem;
 	}	
 }
 
@@ -516,7 +515,7 @@
 	list-style-type: decimal;
 
 	li { 
-		font-size: 1.1vw;
+		font-size: 1.1rem;
 		padding: 0.4vh 0
 	}
 }
@@ -611,7 +610,7 @@
 		text-align: center;
 		position: absolute;
 		bottom: 10%;
-		font-size: 3vw;
+		font-size: 0.75rem;
 	}
 
 	.recruit-nav-list-item-container {
@@ -657,13 +656,13 @@
 			list-style: none;
 			margin-left: 1.5rem;
 			margin-bottom: 0.5rem;
-			font-size: 50vw;
+			font-size: 12.5rem;
 		}
 
 		a {
 			text-decoration: none;
 			transition: color 0.3s ease-in-out;
-			font-size: 5vw;
+			font-size: 1.25rem;
 		}
 	}
 
@@ -782,22 +781,22 @@
 
 	  .procedure-desc-item{
 		  ul,li,span{
-			  font-size: 4vw;
+			  font-size: 1rem;
 		  }
 	
 		  h3 {
-			  font-size: 5.5vw;
+			  font-size: 1.375rem;
 			  line-height: 1.5;
 		  }
 	  }
 
 	  .makers-desc-item{
 		ul,li,span{
-			font-size: 4vw;
+			font-size: 1rem;
 		}
   
 		h3 {
-			font-size: 5.5vw;
+			font-size: 1.375rem;
 			line-height: 1.5;
 		}
 	}
@@ -859,19 +858,19 @@
 	  .timeline-item-container {
 		  width: 40vw;
 		  ul{
-			font-size: 4vw !important;
+			font-size: 1rem !important;
 			top: 9vw !important;
 		  }
 	  }
 	  .timeline-item-list{
 		li{
-			font-size: 4vw !important;
+			font-size: 1rem !important;
 			top: 9vw !important;
 		}
 	  }
 	  .timeline-item-heading-container{
 		h3{
-			font-size: 5vw !important;
+			font-size: 1.25rem !important;
 		}
 	  }
 
@@ -884,7 +883,7 @@
 		&:last-child{
 			.timeline-item-heading-container{
 				h3{
-					font-size: 6vw !important;
+					font-size: 1.5rem !important;
 				}
 			}
 		}
@@ -895,7 +894,7 @@
 	}
 
 	.small {
-		font-size: 3vw;
+		font-size: 0.75rem;
 	}
 
 	.procedure-footer, .makers-footer{
@@ -903,7 +902,7 @@
 		bottom: 0vw;
 		
 		a {
-			font-size: 3vw;
+			font-size: 0.75rem;
 		}	
 	}
 
@@ -913,7 +912,7 @@
 	}
 	 
 	.procedure-item-button, .makers-item-button, .procedure-item-button-disabled, .makers-item-button-disabled {
-		font-size: 2.5vw;
+		font-size: 0.625rem;
 		white-space: nowrap;
 	}
 
