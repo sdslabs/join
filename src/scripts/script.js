@@ -23,15 +23,16 @@ jQuery(document).ready(function($){
   	};
 
   	var timelines = {
-  		0 : "1578940200", // Competitions (14th Jan'20, 00:00)
-  		1 : "1579113000", // Intro Talk  (16th Jan'20, 00:00)
-  		2 : "1579199400", // Recruitment Test (17th Jan'20, 00:00)
-  		3 : "1579458600", // Interviews  (20th Jan'20, 23:59:59)
+  		0 : "1638709200", // Intro Talk  (5th Dec'21, 18:30)
+  		1 : "1742440338", // Competitions (14th Jan'20, 00:00)
+  		2 : "1648056600", // Recruitment Test (23rd Man'22, 23:00)
+  		3 : "1742440338", // Interviews  (20th Jan'20, 23:59:59)
    	};
 
   	var navLeftButton = $('#nav-left-button');
   	var navRightButton = $('#nav-right-button');
 
+	var container = $('.container');
   	var navbar = $('.navbar');
   	var pageNavbar = $('.page-nav');
 	var homeLinkContainer = $('.recruit-nav');	
@@ -45,7 +46,17 @@ jQuery(document).ready(function($){
 
 	var fancyboxOn = false;
 
+	const checkbox = document.querySelector('#nav-toggle');
+	const navIcon = document.getElementById('nav-icon');
+
     function matchURL(url) {
+
+		if(checkbox.checked) {
+			checkbox.checked = false;
+			navIcon.classList.toggle('opened');
+			navIcon.setAttribute('aria-expanded', navIcon.classList.contains('opened'));
+		}
+
         for (var index in routes)
         {
             if(url == index)
@@ -101,9 +112,13 @@ jQuery(document).ready(function($){
 			
 		if(nextSlideIndex != 0) {
 			$(pageNavbar).removeClass('hidden');
+			$(navbar).removeClass('hidden');
+			$(container).addClass('container-padding');
 		}
 		else {
 			$(pageNavbar).addClass('hidden');
+			$(navbar).addClass('hidden');
+			$(container).removeClass('container-padding');
 		}
 
 		if (nextSlideIndex > 0) {
@@ -187,7 +202,20 @@ jQuery(document).ready(function($){
 		for ( var i=0; i<+currTimeline+1; i++) {
 	  		scheduleTimelineItem.eq(i).addClass('fade');
 	  		scheduleTimelineItem.eq(i).find('li').wrap('<strike>');
+			scheduleTimelineItem.eq(i).find('ul').wrap('<strike>');
 	  	}
 	  }
 	});
+
+	document.getElementById("nav-schedule").onclick = function() {matchURL(pageUrls[1])};
+	document.getElementById("nav-procedure").onclick = function() {matchURL(pageUrls[2])};
+	document.getElementById("nav-challenges").onclick = function() {matchURL(pageUrls[3])};
+	document.getElementById("nav-competitions").onclick = function() {matchURL(pageUrls[4])};
+	document.getElementById("nav-whysds").onclick = function() {matchURL(pageUrls[5])};
+	document.getElementById("nav-result").onclick = function() {matchURL(pageUrls[6])};
+
+	checkbox.onclick = function () {
+		navIcon.classList.toggle('opened');
+		navIcon.setAttribute('aria-expanded', navIcon.classList.contains('opened'));
+	};
 });

@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-weight: 800;
 	font-size: 60px;
-	font-size: 4.39vw;
+	font-size: 4.5rem;
 	line-height: 1.4;
 	color: #333333;
 }
@@ -50,14 +50,11 @@ p {
 
 ul,ol {
 	list-style-type: disc;
-	
-	li {
-		font-weight: 300;
-		font-size: 18px;
-		font-size: 1.3vw;
-		line-height: 1.6;
-		color: #767784;
-	}
+	font-weight: 300;
+	font-size: 18px;
+	font-size: 1.3vw;
+	line-height: 1.6;
+	color: #767784;
 }
 
 a {
@@ -72,6 +69,11 @@ a {
 		color: #000000;
 		text-decoration: none;
 	}
+}
+
+a.disabled {
+	pointer-events: none;
+	cursor: default;
 }
 
 
@@ -93,3 +95,19 @@ a {
 	font-weight: bold;
 }
 
+@media only screen and (max-width: 1024px) {
+	h1 {
+		font-weight: 800;
+		font-size: 2.5rem;
+		line-height: 1.4;
+		color: #333333;
+	}
+
+	p {
+		font-family: inherit;
+		font-weight: 300;
+		font-size: 1rem;
+		color: #767784;
+		line-height: 1.6;
+	}
+}
