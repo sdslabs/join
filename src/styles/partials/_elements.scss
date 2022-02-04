@@ -628,7 +628,7 @@
 	}
 
 	.navbar {
-		box-shadow: 0px 2px 5px 0px #aaa;
+		box-shadow: 0px 0px 15px rgba(116, 128, 144, 0.15);
 		position: fixed;
 		width: 100%;
 		background: #fff;
@@ -661,8 +661,6 @@
 
 		a {
 			text-decoration: none;
-			color: #444;
-			font-weight: 500;
 			transition: color 0.3s ease-in-out;
 			font-size: 5vw;
 		}
@@ -745,7 +743,7 @@
 		padding-left: 50px;
 		margin-top: -10vw;
 		transition: transform 0.5s ease-in-out;
-		box-shadow: 5px 0px 10px 0px #aaa;
+		box-shadow: 0px 0px 15px rgba(116, 128, 144, 0.15);
 	  }
 	
 	  .navbar .menu-items li {
@@ -799,10 +797,21 @@
 		  }
 	
 		  h3 {
-			  font-size: 4.5vw;
+			  font-size: 5.5vw;
 			  line-height: 1.5;
 		  }
 	  }
+
+	  .makers-desc-item{
+		ul,li,span{
+			font-size: 4vw;
+		}
+  
+		h3 {
+			font-size: 5.5vw;
+			line-height: 1.5;
+		}
+	}
 
 	  .empty-state {
 		  width: 100%;
@@ -819,6 +828,7 @@
 		flex-direction: column;
 		align-items: flex-start;
 		padding-left: 6vw;
+		margin-top: 10vw;
 	  }
 	  
 	  .timeline-line {
@@ -849,7 +859,7 @@
 	  .timeline-item-list-container {
 		top: 9vw !important;
 		left: 2.9vw;
-		width: 25vw;
+		width: 40vw;
 	  }
 
 	  .timeline-item-heading-container {
@@ -858,21 +868,21 @@
 		width: 50vw;
 	  }
 	  .timeline-item-container {
-		  width: 25vw;
+		  width: 40vw;
 		  ul{
-			font-size: 4.5vw !important;
+			font-size: 4vw !important;
 			top: 9vw !important;
 		  }
 	  }
 	  .timeline-item-list{
 		li{
-			font-size: 4.5vw !important;
+			font-size: 4vw !important;
 			top: 9vw !important;
 		}
 	  }
 	  .timeline-item-heading-container{
 		h3{
-			font-size: 6vw !important;
+			font-size: 5vw !important;
 		}
 	  }
 
@@ -890,5 +900,31 @@
 			}
 		}
 	  }
-	  
+
+	.procedure-desc-item, .makers-desc-item {
+		margin-bottom: 4vw;
+	}
+
+	.small {
+		font-size: 3vw;
+	}
+
+	.procedure-footer, .makers-footer{
+		position: relative;
+		bottom: 0vw;
+		
+		a {
+			font-size: 4vw;
+		}	
+	}
+
+	.makers-rule-list {
+		padding-left: 5%;
+		list-style-type: decimal;
+	}
+	 
+	.procedure-item-button, .makers-item-button, .procedure-item-button-disabled, .makers-item-button-disabled {
+		font-size: 2.5vw;
+		white-space: nowrap;
+	}
 }
