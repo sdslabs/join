@@ -405,8 +405,9 @@
 
 .procedure-footer,
 .makers-footer {
-  position: absolute;
-  bottom: -3vw;
+  position: relative;
+  bottom: 0vw;
+  z-index: -1;
   a {
     font-size: 0.75rem;
   }
