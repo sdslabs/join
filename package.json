@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" :"grunt",
-    "serve": "grunt serve"
+    "dev": "grunt",
+    "serve": "grunt serve",
+    "build": "grunt build",
+    "deploy": "gh-pages -d dist -b gh-pages"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/sdslabs/join#readme",
   "devDependencies": {
     "connect-livereload": "^0.6.0",
+    "gh-pages": "^3.2.3",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-connect": "^1.0.2",
