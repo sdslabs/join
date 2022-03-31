@@ -1,18 +1,24 @@
-# SDSLabs Recruitment Page 2017
+# SDSLabs Recruitment Page
+
 This website is used as a registration portal during the recruitment days for the SDSLabs.
 
 ## Prerequisites
 
-- Install node and npm.
+- Install nvm.
 
 ## Setup
 
+- Run `nvm install` to install node version 8.
 - Run `npm install`.
 
-## Development 
+## Development
 
-- Run `./node_modules/.bin/grunt` to serve the site with livereload for development.
+- Run `npm run dev` to serve the site with livereload for development.
 
 ## Production
 
-- Run `./node_modules/.bin/grunt serve` to build the production website in `dist` folder.
+- Run `npm run serve` to build the production website in `dist` folder.
+
+## Deployment
+
+- Run `npm run deploy` to deploy `dist` folder on `gh-pages` branch.
